@@ -1,0 +1,58 @@
+/*
+ * ALT UI kit — design tokens
+ * Source: Figma file "ALT", variables used by the Button component (node 26:937).
+ * Naming: Figma "group/sub/name"  →  CSS "--group-sub-name".
+ * Do not edit values by hand: change the variable in Figma, then update here.
+ */
+:root {
+  /* ── Typography ─────────────────────────────── */
+  --font-family-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-weight-bold: 700;
+  --body-m: 16px;
+  --body-s: 14px;
+  --letter-spacing-default: 0px;
+
+  /* ── Spacing ────────────────────────────────── */
+  /* Figma has two parallel groups: space/* and spacing/* */
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+
+  /* ── Radius ─────────────────────────────────── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* ── Page ───────────────────────────────────── */
+  --fill-page-primary: #17181a;
+
+  /* ── Button: primary ────────────────────────── */
+  --btn-primary-bg: #ffd84d;
+  --btn-primary-bg-hover: #f7ce3f;
+  --text-button-primary: #0c0d0e;
+  --icon-button-primary: #0c0d0e;
+  --text-button-primary-disabled: #6b6b6c;
+  --icon-button-primary-disabled: #b5b5b5;
+
+  /* ── Button: secondary ──────────────────────── */
+  --btn-secondary-bg: #26282d;
+  --btn-secondary-bg-hover: #4a4d50;
+
+  /* ── Button: buy / sell ─────────────────────── */
+  --fill-button-buy: #21a64c;
+  --fill-button-sell: #ff4c29;
+
+  /* ── Button: inverted text & icons (secondary, buy, sell) ── */
+  --text-button-invert: #ffffff;
+  --icon-button-invert: #ffffff;
+  --text-button-invert-disabled: #6b6b6c;
+  --icon-button-invert-disabled: #6e7276;
+
+  /* ── Button: disabled background ────────────── */
+  /* Figma has two variables with the same value:
+     btn/simple/bg/disabled and fill/button/simple-disabled */
+  --btn-simple-bg-disabled: #4a4d50;
+  --fill-button-simple-disabled: #4a4d50;
+}

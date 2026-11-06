@@ -1,0 +1,167 @@
+/* Button — values mirror Figma node 26:937 (ALT UI kit). Only tokens, no raw colors. */
+
+.button {
+  /* local custom properties, set by role/size below */
+  --btn-bg: var(--btn-primary-bg);
+  --btn-bg-hover: var(--btn-primary-bg-hover);
+  --btn-fg: var(--text-button-primary);
+  --btn-icon: var(--icon-button-primary);
+  --btn-fg-disabled: var(--text-button-primary-disabled);
+  --btn-icon-disabled: var(--icon-button-primary-disabled);
+  --btn-h: 52px;
+  --btn-px: var(--space-2xl);
+  --btn-radius: var(--radius-lg);
+  --btn-font: var(--body-m);
+  --btn-icon-size: 24px;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: var(--btn-h);
+  padding: 0 var(--btn-px);
+  border: none;
+  border-radius: var(--btn-radius);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--btn-font);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-default);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.content {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--radius-sm); /* Figma binds gap to radius/sm (8px) */
+}
+
+.icon {
+  display: inline-flex;
+  color: var(--btn-icon);
+}
+.icon > svg,
+.spinner > svg {
+  width: var(--btn-icon-size);
+  height: var(--btn-icon-size);
+  stroke-width: 2;
+}
+
+/* ── States ─────────────────────────────────── */
+.button:hover:not(:disabled),
+.button:active:not(:disabled),
+.button:global(.force-hover):not(:disabled) /* docs only: static hover preview */ {
+  background: var(--btn-bg-hover);
+}
+
+/* Not in Figma yet — added for keyboard accessibility (WCAG 2.4.7) */
+.button:focus-visible {
+  outline: 2px solid var(--btn-primary-bg);
+  outline-offset: 2px;
+}
+
+.button:disabled:not([data-loading]) {
+  background: var(--btn-simple-bg-disabled);
+  color: var(--btn-fg-disabled);
+  cursor: not-allowed;
+}
+.button:disabled:not([data-loading]) .icon {
+  color: var(--btn-icon-disabled);
+}
+
+/* Loading: Figma uses the hover fill, hides the label and keeps the width */
+.loading {
+  background: var(--btn-bg-hover);
+  cursor: progress;
+}
+.loading .content {
+  visibility: hidden;
+}
+.spinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btn-icon);
+}
+.spinner > svg {
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner > svg { animation-duration: 2.5s; }
+}
+
+/* ── Roles ──────────────────────────────────── */
+.primary {
+  /* defaults above */
+}
+
+.secondary {
+  --btn-bg: var(--btn-secondary-bg);
+  --btn-bg-hover: var(--btn-secondary-bg-hover);
+  --btn-fg: var(--text-button-invert);
+  --btn-icon: var(--icon-button-invert);
+  --btn-fg-disabled: var(--text-button-invert-disabled);
+  --btn-icon-disabled: var(--icon-button-invert-disabled);
+}
+
+/* Buy / Sell: Figma hover = same fill as default (no hover token yet) */
+.buy {
+  --btn-bg: var(--fill-button-buy);
+  --btn-bg-hover: var(--fill-button-buy);
+  --btn-fg: var(--text-button-invert);
+  --btn-icon: var(--icon-button-invert);
+  --btn-fg-disabled: var(--text-button-invert-disabled);
+  --btn-icon-disabled: var(--icon-button-invert-disabled);
+}
+.sell {
+  --btn-bg: var(--fill-button-sell);
+  --btn-bg-hover: var(--fill-button-sell);
+  --btn-fg: var(--text-button-invert);
+  --btn-icon: var(--icon-button-invert);
+  --btn-fg-disabled: var(--text-button-invert-disabled);
+  --btn-icon-disabled: var(--icon-button-invert-disabled);
+}
+.buy:disabled:not([data-loading]),
+.sell:disabled:not([data-loading]) {
+  background: var(--fill-button-simple-disabled);
+}
+
+/* ── Sizes ──────────────────────────────────── */
+.lg {
+  --btn-h: 52px;
+  --btn-px: var(--space-2xl);
+  --btn-radius: var(--radius-lg);
+  --btn-font: var(--body-m);
+  --btn-icon-size: 24px;
+}
+.md {
+  --btn-h: 42px;
+  --btn-px: var(--space-xl);
+  --btn-radius: var(--radius-lg);
+  --btn-font: var(--body-s);
+  --btn-icon-size: 20px;
+}
+.sm {
+  --btn-h: 32px;
+  --btn-px: var(--space-xl);
+  --btn-radius: var(--radius-md);
+  --btn-font: var(--body-s);
+  --btn-icon-size: 20px;
+}
+
+/* Size × role overrides that exist in Figma */
+.secondary.lg { --btn-px: var(--radius-xl); }          /* 20px */
+.secondary.sm { --btn-px: var(--spacing-md); }         /* 12px */
+.buy.lg, .sell.lg { --btn-h: 48px; }                   /* 48px, not 52px */
+.buy.md, .sell.md { --btn-px: var(--space-2xl); }      /* 24px */
