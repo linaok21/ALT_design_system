@@ -1,0 +1,42 @@
+# Publishes Storybook to Chromatic on every push to main and on every pull request.
+# Requires the repository secret CHROMATIC_PROJECT_TOKEN
+# (GitHub → Settings → Secrets and variables → Actions).
+name: Chromatic
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: chromatic-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  chromatic:
+    name: Publish Storybook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for Chromatic baselines)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # npm install (not npm ci): the lockfile may come from Windows or Linux,
+      # and install fetches the right native bindings for the runner.
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          buildScriptName: build-storybook
+          exitZeroOnChanges: true
+          onlyChanged: true

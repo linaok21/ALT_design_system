@@ -33,3 +33,10 @@ src/
 Іконки — бібліотека [lucide](https://lucide.dev) (`smile`, `loader-circle`), та сама, що в Figma.
 
 Посилання на макет у кожній історії: вкладка **Design**.
+
+## Автодеплой у Chromatic
+Workflow `.github/workflows/chromatic.yml` публікує Storybook у Chromatic після кожного push у `main` і для кожного Pull Request.
+
+Один раз потрібно додати секрет у GitHub: **Settings → Secrets and variables → Actions → New repository secret**, назва `CHROMATIC_PROJECT_TOKEN`, значення — токен проєкту з Chromatic (**Manage → Configure**).
+
+Публічний Storybook (остання версія `main`): https://main--6aede6d6d89a44a42d131a8d.chromatic.com
