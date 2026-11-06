@@ -4,9 +4,10 @@
   "description": "",
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build && node scripts/escape-replacement-char.mjs storybook-static",
+    "build-storybook": "storybook build",
     "typecheck": "tsc",
-    "chromatic": "chromatic --build-script-name build-storybook --exit-zero-on-changes"
+    "chromatic": "chromatic --storybook-build-dir storybook-static",
+    "build-storybook:static": "storybook build && node scripts/escape-replacement-char.mjs storybook-static"
   },
   "keywords": [],
   "author": "",
