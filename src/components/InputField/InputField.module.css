@@ -1,0 +1,256 @@
+/* Input Field — values mirror Figma node 41:8759 (ALT UI kit). Only tokens, no raw colors. */
+
+.root {
+  /* local custom properties, set by size / border below */
+  --if-gap: var(--space-md);
+  --if-h: 52px;
+  --if-px: 16px;
+  --if-radius: var(--radius-md);
+  --if-font: var(--body-m);
+  --if-title-font: var(--body-m);
+  --if-helper-font: var(--body-s);
+  --if-icon: 24px;
+  --if-helper-icon: 16px;
+  --if-stroke: var(--stroke-input-default);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--if-gap);
+  width: 100%;
+  font-family: var(--font-family-body);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: normal;
+  color: var(--text-static-primary);
+}
+
+/* ── Title row ──────────────────────────────── */
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  font-size: var(--if-title-font);
+}
+.title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: var(--font-weight-semibold);
+}
+.label {
+  flex: none;
+  font-weight: var(--font-weight-regular);
+  white-space: nowrap;
+}
+
+/* ── Field ──────────────────────────────────── */
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  box-sizing: border-box;
+  height: var(--if-h);
+  padding: 0 var(--if-px);
+  border-radius: var(--if-radius);
+  cursor: text;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+.bordered .control {
+  border: 1px solid var(--if-stroke);
+}
+.left {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+.right {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+  color: var(--icon-static-secondary);
+}
+.icon > svg {
+  width: var(--if-icon);
+  height: var(--if-icon);
+  stroke-width: 1.75;
+}
+
+.input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: var(--if-font);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-static-primary);
+  caret-color: var(--text-static-primary);
+}
+.input::placeholder {
+  color: var(--text-static-secondary-subdued);
+  opacity: 1;
+}
+
+/* Description sits right after the value and appears once there is a value */
+.withDescription .input {
+  flex: 0 1 auto;
+  field-sizing: content;
+  min-width: 1ch;
+}
+.withDescription .input:placeholder-shown {
+  flex: 1 1 auto;
+}
+.description {
+  flex: none;
+  font-size: var(--if-font);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-static-secondary-subdued);
+  white-space: nowrap;
+}
+.input:placeholder-shown ~ .description {
+  display: none;
+}
+
+.suffix {
+  font-size: var(--body-s);
+  color: var(--text-static-secondary);
+  white-space: nowrap;
+}
+.action {
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: var(--body-s);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-link-primary);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.action:hover:not(:disabled) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.action:focus-visible {
+  outline: 2px solid var(--stroke-input-hover);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Helper text ────────────────────────────── */
+.helper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--if-helper-font);
+  color: var(--text-static-primary);
+}
+.helperIcon {
+  flex: none;
+  width: var(--if-helper-icon);
+  height: var(--if-helper-icon);
+  color: var(--icon-static-secondary);
+}
+
+/* ── States ─────────────────────────────────── */
+/* Hover and typing (focus): 1.5px yellow outline.
+   The extra 0.5px is an inset shadow so the layout does not shift. */
+.bordered:not(.disabled):not(.error) .control:hover,
+.bordered:not(.disabled):not(.error) .control:focus-within,
+.bordered:not(.disabled):not(.error):global(.force-hover) .control,
+.bordered:not(.disabled):not(.error):global(.force-focus) .control /* docs only: static preview */ {
+  border-color: var(--stroke-input-hover);
+  box-shadow: inset 0 0 0 0.5px var(--stroke-input-hover);
+}
+
+.error {
+  --if-stroke: var(--stroke-input-error);
+}
+.bordered.error .control {
+  box-shadow: inset 0 0 0 0.5px var(--stroke-input-error);
+}
+.error .helper {
+  color: var(--text-status-error);
+}
+.error .helperIcon {
+  color: var(--icon-status-error);
+}
+
+.disabled {
+  --if-stroke: var(--stroke-input-disable);
+}
+.disabled .control {
+  cursor: not-allowed;
+}
+.disabled .title,
+.disabled .input,
+.disabled .input::placeholder,
+.disabled .description,
+.disabled .suffix,
+.disabled .helper {
+  color: var(--text-static-disabled);
+}
+.disabled .action {
+  color: var(--text-link-primary-disabled);
+  cursor: not-allowed;
+}
+.disabled .icon,
+.disabled .helperIcon {
+  color: var(--icon-link-default-disabled);
+}
+.disabled .input {
+  cursor: not-allowed;
+}
+
+/* ── Sizes ──────────────────────────────────── */
+.md {
+  --if-gap: var(--space-md);
+  --if-h: 52px;
+  --if-radius: var(--radius-md);
+  --if-font: var(--body-m);
+  --if-title-font: var(--body-m);
+  --if-helper-font: var(--body-s);
+  --if-icon: 24px;
+  --if-helper-icon: 16px;
+}
+.sm {
+  --if-gap: var(--spacing-sm);
+  --if-h: 40px;
+  --if-radius: var(--radius-sm);
+  --if-font: var(--body-s);
+  --if-title-font: var(--body-s);
+  --if-helper-font: var(--body-xs);
+  --if-icon: 20px;
+  --if-helper-icon: 14px;
+}
+
+/* Borderless: large 24px value, no outline, no horizontal padding */
+.borderless {
+  --if-gap: var(--space-sm);
+  --if-h: 42px;
+  --if-px: var(--space-none);
+}
+.borderless .input,
+.borderless .input::placeholder {
+  font-family: var(--font-family-heading);
+  font-size: var(--heading-4);
+  font-weight: var(--font-weight-medium);
+}
+.borderless .input::placeholder {
+  color: var(--text-static-secondary);
+}
+.borderless .description {
+  font-size: var(--body-m);
+  color: var(--text-static-secondary);
+}

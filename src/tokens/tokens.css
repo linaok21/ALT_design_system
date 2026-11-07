@@ -50,6 +50,39 @@
   --text-button-invert-disabled: #6b6b6c;
   --icon-button-invert-disabled: #6e7276;
 
+  /* ── Typography (added for Input Field) ─────── */
+  --font-family-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --body-xs: 12px;
+  --heading-4: 24px;
+
+  /* ── Spacing (added for Input Field) ────────── */
+  --space-none: 0px;
+  --space-sm: 8px;
+  --space-md: 12px;
+
+  /* ── Text ───────────────────────────────────── */
+  --text-static-primary: #ffffff;
+  --text-static-secondary: #b5b5b5;
+  --text-static-secondary-subdued: #6b6b6c;
+  --text-static-disabled: #4a4d50;
+  --text-link-primary: #fbd24f;
+  --text-link-primary-disabled: #4a4d50;
+  --text-status-error: #ff4c29;
+
+  /* ── Icons ──────────────────────────────────── */
+  --icon-static-secondary: #abaeb2;
+  --icon-link-default-disabled: #6e7276;
+  --icon-status-error: #ff4c29;
+
+  /* ── Input strokes ──────────────────────────── */
+  --stroke-input-default: #4a4d50;
+  --stroke-input-hover: #ffde6b;
+  --stroke-input-error: #ff4c29;
+  --stroke-input-disable: #26282d;
+
   /* ── Button: disabled background ────────────── */
   /* Figma has two variables with the same value:
      btn/simple/bg/disabled and fill/button/simple-disabled */
