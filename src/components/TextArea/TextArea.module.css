@@ -1,0 +1,129 @@
+/* Text Area — values mirror Figma node 57:11010 (ALT UI kit). Only tokens, no raw colors. */
+
+.root {
+  --ta-stroke: var(--stroke-input-default);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  width: 100%;
+  font-family: var(--font-family-body);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: normal;
+  color: var(--text-static-primary);
+}
+
+.title {
+  font-size: var(--body-m);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ── Field ──────────────────────────────────── */
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  box-sizing: border-box;
+  height: 126px;
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--ta-stroke);
+  border-radius: var(--radius-md);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+  cursor: text;
+}
+
+.textarea {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  font: inherit;
+  font-size: var(--body-m);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4;
+  color: var(--text-static-primary);
+  caret-color: var(--text-static-primary);
+
+  /* Thin scrollbar like Figma "Scroll Bar" (4px, stroke/static/default) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--stroke-static-default) transparent;
+}
+.textarea::-webkit-scrollbar {
+  width: var(--space-2xs);
+}
+.textarea::-webkit-scrollbar-thumb {
+  background: var(--stroke-static-default);
+  border-radius: var(--radius-full);
+}
+.textarea::placeholder {
+  color: var(--text-static-secondary-subdued);
+  opacity: 1;
+}
+
+.counter {
+  align-self: flex-end;
+  font-size: var(--body-s);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-static-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Helper text ────────────────────────────── */
+.helper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--body-s);
+  color: var(--text-static-primary);
+}
+.helperIcon {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  color: var(--icon-static-secondary);
+}
+
+/* ── States ─────────────────────────────────── */
+/* Not in Figma: hover and focus, same as Input Field, for consistency */
+.root:not(.disabled):not(.error) .control:hover,
+.root:not(.disabled):not(.error) .control:focus-within,
+.root:not(.disabled):not(.error):global(.force-focus) .control /* docs only: static preview */ {
+  border-color: var(--stroke-input-hover);
+  box-shadow: inset 0 0 0 0.5px var(--stroke-input-hover);
+}
+
+.error {
+  --ta-stroke: var(--stroke-input-error);
+}
+.error .helper {
+  color: var(--text-status-error);
+}
+.error .helperIcon {
+  color: var(--icon-status-error);
+}
+
+.disabled {
+  --ta-stroke: var(--stroke-input-disable);
+}
+.disabled .control,
+.disabled .textarea {
+  cursor: not-allowed;
+}
+.disabled .title,
+.disabled .textarea,
+.disabled .textarea::placeholder,
+.disabled .counter {
+  color: var(--text-static-disabled);
+}
+.disabled .helper {
+  color: var(--text-link-primary-disabled);
+}
+.disabled .helperIcon {
+  color: var(--icon-link-primary-disabled);
+}

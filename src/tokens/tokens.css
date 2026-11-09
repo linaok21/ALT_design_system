@@ -62,6 +62,9 @@
   --space-none: 0px;
   --space-sm: 8px;
   --space-md: 12px;
+  --space-lg: 16px;
+  --space-2xs: 4px;
+  --radius-full: 9999px;
 
   /* ── Text ───────────────────────────────────── */
   --text-static-primary: #ffffff;
@@ -76,6 +79,10 @@
   --icon-static-secondary: #abaeb2;
   --icon-link-default-disabled: #6e7276;
   --icon-status-error: #ff4c29;
+  --icon-link-primary-disabled: #4a4d50;
+
+  /* ── Static strokes ─────────────────────────── */
+  --stroke-static-default: #232629;
 
   /* ── Input strokes ──────────────────────────── */
   --stroke-input-default: #4a4d50;
