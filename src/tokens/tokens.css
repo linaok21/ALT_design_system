@@ -76,6 +76,7 @@
   --text-status-error: #ff4c29;
 
   /* ── Icons ──────────────────────────────────── */
+  --icon-static-primary: #ffffff;
   --icon-static-secondary: #abaeb2;
   --icon-link-default-disabled: #6e7276;
   --icon-status-error: #ff4c29;

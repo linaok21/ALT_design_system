@@ -1,0 +1,82 @@
+/* Menu Item — values mirror Figma node 32:979 (ALT UI kit). Only tokens, no raw colors. */
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  box-sizing: border-box;
+  padding: var(--space-sm) var(--space-2xl);
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  font-family: var(--font-family-body);
+  font-size: var(--body-s);
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  letter-spacing: var(--letter-spacing-default);
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--text-static-secondary);
+  cursor: pointer;
+  transition: color 120ms ease, background-color 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Label keeps the width of its bold version, so selecting an item
+   does not shift the menu (Figma: 147px default vs 152px selected). */
+.label {
+  display: inline-grid;
+}
+.label::after {
+  content: attr(data-text);
+  grid-area: 1 / 1;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: var(--font-weight-bold);
+}
+
+.caret {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--icon-static-secondary);
+  transition: transform 150ms ease;
+}
+.caret[data-up] {
+  transform: rotate(180deg);
+}
+
+/* ── States ─────────────────────────────────── */
+.item:hover:not(.disabled),
+.item:global(.force-hover):not(.disabled) /* docs only: static preview */ {
+  color: var(--text-static-primary);
+}
+.item:hover:not(.disabled) .caret,
+.item:global(.force-hover):not(.disabled) .caret {
+  color: var(--icon-static-primary);
+}
+
+/* Not in Figma — keyboard focus ring (WCAG 2.4.7), same as Button */
+.item:focus-visible {
+  outline: 2px solid var(--btn-primary-bg);
+  outline-offset: 2px;
+}
+
+.selected {
+  background: var(--btn-secondary-bg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-button-invert);
+}
+.selected .caret {
+  color: var(--icon-button-invert);
+}
+
+.disabled {
+  color: var(--text-link-primary-disabled);
+  cursor: not-allowed;
+}
+.disabled .caret {
+  color: var(--icon-link-primary-disabled);
+}

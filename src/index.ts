@@ -5,3 +5,5 @@ export { InputField } from './components/InputField/InputField';
 export type { InputFieldProps, InputFieldSize } from './components/InputField/InputField';
 export { TextArea } from './components/TextArea/TextArea';
 export type { TextAreaProps } from './components/TextArea/TextArea';
+export { MenuItem } from './components/MenuItem/MenuItem';
+export type { MenuItemProps } from './components/MenuItem/MenuItem';
