@@ -13,4 +13,6 @@ export { IconButton } from './components/IconButton/IconButton';
 export type { IconButtonProps, IconButtonSize, IconButtonVariant } from './components/IconButton/IconButton';
 export { ReverseButton } from './components/ReverseButton/ReverseButton';
 export type { ReverseButtonProps } from './components/ReverseButton/ReverseButton';
+export { Header, HeaderNav, AltLogo } from './components/Header/Header';
+export type { HeaderProps, HeaderNavProps, HeaderVariant } from './components/Header/Header';
 export * from './icons';

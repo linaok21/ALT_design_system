@@ -68,6 +68,8 @@
   --space-md: 12px;
   --space-lg: 16px;
   --space-2xs: 4px;
+  --space-3xs: 2px;
+  --space-3xl: 32px;
   --radius-full: 9999px;
 
   /* ── Text ───────────────────────────────────── */
@@ -84,6 +86,7 @@
   /* ── Icons ──────────────────────────────────── */
   --icon-static-primary: #ffffff;
   --icon-static-secondary: #abaeb2;
+  --icon-static-secondary-subdued: #6b6b6c;
   --icon-link-default: #ffffff;
   --icon-link-default-disabled: #6e7276;
   --icon-link-primary: #fbd24f;

@@ -1,0 +1,79 @@
+/* Header — values mirror Figma node 5754:220155 (ALT UI kit). Only tokens, no raw colors. */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  box-sizing: border-box;
+  width: 100%;
+  padding: var(--space-sm) var(--space-3xl);
+  background: var(--fill-page-primary);
+}
+.client {
+  height: 64px;
+}
+.admin {
+  height: 58px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  min-width: 0;
+}
+
+.right {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 0 var(--space-sm);
+}
+
+/* ── Logo ───────────────────────────────────── */
+.logo {
+  display: inline-flex;
+  flex: none;
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+/* Not in Figma — keyboard focus ring, same as other components */
+.logo:focus-visible {
+  outline: 2px solid var(--btn-primary-bg);
+  outline-offset: 0;
+}
+.logoSvg {
+  display: block;
+}
+.logoMark {
+  fill: var(--btn-primary-bg);
+}
+.logoMarkGlyph {
+  fill: var(--icon-button-primary);
+}
+.logoWord {
+  fill: var(--icon-static-primary);
+}
+
+/* ── Nav pill ───────────────────────────────── */
+/* Figma: no fill, only "Glass effect" (radius 4) — approximated like IconButton secondary */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  min-width: 0;
+  padding: var(--space-3xs);
+  border-radius: var(--radius-full);
+  overflow-x: auto;
+  scrollbar-width: none;
+  box-shadow:
+    inset 1px 1px 0 rgb(255 255 255 / 0.28),
+    inset -1px -1px 0 rgb(255 255 255 / 0.12);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.nav::-webkit-scrollbar {
+  display: none;
+}
