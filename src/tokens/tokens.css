@@ -71,6 +71,8 @@
   --text-static-secondary: #b5b5b5;
   --text-static-secondary-subdued: #6b6b6c;
   --text-static-disabled: #4a4d50;
+  --text-link-default: #ffffff;
+  --text-link-default-disabled: #4a4d50;
   --text-link-primary: #fbd24f;
   --text-link-primary-disabled: #4a4d50;
   --text-status-error: #ff4c29;
@@ -78,7 +80,9 @@
   /* ── Icons ──────────────────────────────────── */
   --icon-static-primary: #ffffff;
   --icon-static-secondary: #abaeb2;
+  --icon-link-default: #ffffff;
   --icon-link-default-disabled: #6e7276;
+  --icon-link-primary: #fbd24f;
   --icon-status-error: #ff4c29;
   --icon-link-primary-disabled: #4a4d50;
 

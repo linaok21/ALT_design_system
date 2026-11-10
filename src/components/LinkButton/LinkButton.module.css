@@ -1,0 +1,87 @@
+/* Link Button — values mirror Figma node 5754:220146 (ALT UI kit). Only tokens, no raw colors. */
+
+.link {
+  --lb-text: var(--text-link-default);
+  --lb-icon: var(--icon-link-default);
+  --lb-text-disabled: var(--text-link-default-disabled);
+  --lb-icon-disabled: var(--icon-link-default-disabled);
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: var(--font-family-body);
+  font-size: var(--body-s);
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  letter-spacing: var(--letter-spacing-default);
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--lb-text);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Label keeps the width of its semibold version, so hover does not shift neighbours */
+.label {
+  display: inline-grid;
+}
+.label::after {
+  content: attr(data-text);
+  grid-area: 1 / 1;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: var(--font-weight-semibold);
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+  color: var(--lb-icon);
+}
+.icon > svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+}
+
+/* ── Roles ──────────────────────────────────── */
+.secondary {
+  /* defaults above */
+}
+.primary {
+  --lb-text: var(--text-link-primary);
+  --lb-icon: var(--icon-link-primary);
+  --lb-text-disabled: var(--text-link-primary-disabled);
+  --lb-icon-disabled: var(--icon-link-primary-disabled);
+}
+.danger {
+  --lb-text: var(--text-status-error);
+  --lb-icon: var(--icon-status-error);
+}
+
+/* ── States ─────────────────────────────────── */
+/* Figma hover: same color, text becomes semibold */
+.link:hover:not(.disabled),
+.link:global(.force-hover):not(.disabled) /* docs only: static preview */ {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Figma state=focus: keyboard focus ring, 2px btn/primary/bg outside the content, radius 4 */
+.link:focus-visible,
+.link:global(.force-focus) /* docs only: static preview */ {
+  outline: 2px solid var(--btn-primary-bg);
+  outline-offset: 0;
+  border-radius: 4px;
+}
+
+.disabled {
+  color: var(--lb-text-disabled);
+  cursor: not-allowed;
+}
+.disabled .icon {
+  color: var(--lb-icon-disabled);
+}
