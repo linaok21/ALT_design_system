@@ -50,6 +50,10 @@
   --text-button-invert-disabled: #6b6b6c;
   --icon-button-invert-disabled: #6e7276;
 
+  /* ── Reverse Button ─────────────────────────── */
+  --yellow-500: #ffd84d;
+  --icon-link-invert: #0c0d0e;
+
   /* ── Typography (added for Input Field) ─────── */
   --font-family-heading: 'Inter', system-ui, -apple-system, sans-serif;
   --font-weight-regular: 400;
@@ -91,6 +95,7 @@
 
   /* ── Static strokes ─────────────────────────── */
   --stroke-static-default: #232629;
+  --stroke-static-subdued: #232629;
 
   /* ── Input strokes ──────────────────────────── */
   --stroke-input-default: #4a4d50;

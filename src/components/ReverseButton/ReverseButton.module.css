@@ -1,0 +1,65 @@
+/* Reverse Btn — values mirror Figma node 5754:220122 (ALT UI kit). Only tokens, no raw colors. */
+
+.button {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: var(--spacing-sm);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--yellow-500);
+  /* Figma: 6px stroke/static/subdued OUTSIDE — a shadow keeps the 40px box like in Figma */
+  box-shadow: 0 0 0 6px var(--stroke-static-subdued);
+  color: var(--icon-link-invert);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.icon {
+  display: inline-flex;
+}
+.icon > svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ── States ─────────────────────────────────── */
+/* Not in Figma — hover uses the primary button hover yellow */
+.button:hover:not(:disabled),
+.button:global(.force-hover) /* docs only: static preview */ {
+  background: var(--btn-primary-bg-hover);
+}
+
+/* Not in Figma — keyboard focus ring (WCAG 2.4.7): yellow outside the dark rim */
+.button:focus-visible,
+.button:global(.force-focus) /* docs only: static preview */ {
+  outline: 2px solid var(--btn-primary-bg);
+  outline-offset: 6px;
+}
+
+/* Figma: same yellow background, grey icon */
+.button:disabled {
+  color: var(--icon-button-invert-disabled);
+  cursor: not-allowed;
+}
+
+/* Figma state=loading: same yellow, dark spinner */
+.loading,
+.loading:disabled {
+  color: var(--icon-button-primary);
+  cursor: progress;
+}
+.loading .icon > svg {
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loading .icon > svg { animation-duration: 2.5s; }
+}

@@ -11,4 +11,6 @@ export { LinkButton } from './components/LinkButton/LinkButton';
 export type { LinkButtonProps, LinkButtonVariant } from './components/LinkButton/LinkButton';
 export { IconButton } from './components/IconButton/IconButton';
 export type { IconButtonProps, IconButtonSize, IconButtonVariant } from './components/IconButton/IconButton';
+export { ReverseButton } from './components/ReverseButton/ReverseButton';
+export type { ReverseButtonProps } from './components/ReverseButton/ReverseButton';
 export * from './icons';
