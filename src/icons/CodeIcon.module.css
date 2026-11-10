@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  flex: none;
+  vertical-align: middle;
+  border-radius: var(--radius-sm);
+  user-select: none;
+}
+.round {
+  border-radius: var(--radius-full);
+}
+
+/* While the file loads: an empty circle of the same size */
+.placeholder {
+  background: var(--btn-secondary-bg);
+}
+
+/* Unknown code: neutral circle with letters, never an empty gap */
+.fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--btn-secondary-bg);
+  color: var(--text-static-secondary);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: 0;
+}

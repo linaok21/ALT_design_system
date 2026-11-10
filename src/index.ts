@@ -7,3 +7,4 @@ export { TextArea } from './components/TextArea/TextArea';
 export type { TextAreaProps } from './components/TextArea/TextArea';
 export { MenuItem } from './components/MenuItem/MenuItem';
 export type { MenuItemProps } from './components/MenuItem/MenuItem';
+export * from './icons';

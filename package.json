@@ -7,7 +7,9 @@
     "build-storybook": "storybook build",
     "typecheck": "tsc",
     "chromatic": "chromatic --storybook-build-dir storybook-static",
-    "build-storybook:static": "storybook build && node scripts/escape-replacement-char.mjs storybook-static"
+    "build-storybook:static": "storybook build && node scripts/escape-replacement-char.mjs storybook-static",
+    "icons": "node scripts/icons/build-icons.mjs",
+    "icons:starter": "node scripts/icons/build-icons.mjs scripts/icons/fixtures"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "@vitejs/plugin-react": "^6.2.1",
     "chromatic": "^18.14.1",
     "storybook": "^10.6.6",
+    "svgo": "^3.3.5",
     "typescript": "^7.0.2",
     "vite": "^8.3.6"
   },

@@ -1,0 +1,21 @@
+{
+  "_comment": "Extra data merged into the generated manifest, keyed by group and code. Keep in sync with descriptions in Figma.",
+  "crypto": {
+    "FTT": { "deprecated": "FTX collapsed in Nov 2022. Keep only for history and old balances." },
+    "LUNA": { "deprecated": "The original Terra (LUNA) collapsed in May 2022 and now trades as Terra Classic (LUNC). Check which one is needed." },
+    "BUSD": { "deprecated": "Paxos stopped issuing BUSD in Feb 2023. Keep only for history and old balances." }
+  },
+  "flags": {
+    "TR": { "aliases": ["Turkey"] },
+    "CI": { "aliases": ["Ivory Coast"] },
+    "SZ": { "aliases": ["Swaziland"] },
+    "MK": { "aliases": ["Macedonia"] },
+    "TL": { "aliases": ["East Timor"] },
+    "CZ": { "aliases": ["Czechia"] },
+    "EH": { "aliases": ["Sahrawi Arab Democratic Republic"] },
+    "VA": { "aliases": ["Holy See"] },
+    "BL": { "aliases": ["St Barts"] },
+    "GB": { "aliases": ["UK", "Great Britain"] },
+    "US": { "aliases": ["USA"] }
+  }
+}

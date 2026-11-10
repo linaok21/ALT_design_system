@@ -5,6 +5,7 @@ import {
   type ReactNode,
   type Ref,
 } from 'react';
+import { Drop } from '../../icons/generated/CustomIcons';
 import styles from './MenuItem.module.css';
 
 type CommonProps = {
@@ -29,21 +30,9 @@ export type MenuItemProps = CommonProps &
     rel?: string;
   };
 
-/** Small filled caret (Figma "Icon /drop" and "Icon /Up"), drawn with currentColor. */
+/** Caret from Figma "Icon /drop"; rotated 180° for "Icon /Up". */
 function Caret({ up }: { up: boolean }) {
-  return (
-    <svg
-      className={styles.caret}
-      data-up={up || undefined}
-      viewBox="0 0 20 20"
-      width="20"
-      height="20"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path d="M6 8.25h8l-4 4.5z" fill="currentColor" />
-    </svg>
-  );
+  return <Drop className={styles.caret} data-up={up || undefined} size={20} />;
 }
 
 /**
