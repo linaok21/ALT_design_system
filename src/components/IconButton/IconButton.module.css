@@ -1,0 +1,86 @@
+/* Icon Button — values mirror Figma node 5754:220140 (ALT UI kit). Only tokens, no raw colors. */
+
+.button {
+  --ib-size: 42px;
+  --ib-icon: 20px;
+  --ib-bg: var(--btn-secondary-bg);
+  --ib-bg-disabled: var(--btn-simple-bg-disabled);
+
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--ib-size);
+  height: var(--ib-size);
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-full);
+  background: var(--ib-bg);
+  color: var(--icon-link-default);
+  cursor: pointer;
+  transition: background-color 120ms ease, opacity 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.icon {
+  display: inline-flex;
+}
+.icon > svg {
+  width: var(--ib-icon);
+  height: var(--ib-icon);
+}
+
+/* ── secondary: round, Figma "Glass effect" ─── */
+/* Approximation of Figma GLASS: light rim from the top-left, softer from the bottom-right, slight blur behind */
+.secondary {
+  box-shadow:
+    inset 1px 1px 0 rgb(255 255 255 / 0.28),
+    inset -1px -1px 0 rgb(255 255 255 / 0.12);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.secondary.size-l {
+  --ib-size: 74px;
+  --ib-icon: 42px;
+  --ib-bg: var(--alpha-white-10);
+  --ib-bg-disabled: var(--alpha-white-10); /* Figma: L disabled keeps the same background */
+}
+.secondary.size-m {
+  --ib-size: 42px;
+  --ib-icon: 20px;
+}
+.secondary.size-s {
+  --ib-size: 32px;
+  --ib-icon: 18px;
+}
+
+/* ── ghost: icon only, 8px padding ──────────── */
+.ghost {
+  --ib-bg: transparent;
+  --ib-bg-disabled: transparent;
+}
+.ghost.size-l {
+  --ib-icon: 24px;
+  --ib-size: calc(var(--ib-icon) + 2 * var(--space-sm)); /* 40px */
+}
+.ghost.size-m,
+.ghost.size-s /* not in Figma — falls back to m */ {
+  --ib-icon: 18px;
+  --ib-size: calc(var(--ib-icon) + 2 * var(--space-sm)); /* 34px */
+}
+
+/* ── States ─────────────────────────────────── */
+/* Not in Figma — keyboard focus ring (WCAG 2.4.7), same as Button */
+.button:focus-visible,
+.button:global(.force-focus) /* docs only: static preview */ {
+  outline: 2px solid var(--btn-primary-bg);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  background: var(--ib-bg-disabled);
+  color: var(--icon-link-default-disabled);
+  cursor: not-allowed;
+}

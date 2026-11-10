@@ -86,6 +86,9 @@
   --icon-status-error: #ff4c29;
   --icon-link-primary-disabled: #4a4d50;
 
+  /* ── Alpha ──────────────────────────────────── */
+  --alpha-white-10: rgba(255, 255, 255, 0.1);
+
   /* ── Static strokes ─────────────────────────── */
   --stroke-static-default: #232629;
 
