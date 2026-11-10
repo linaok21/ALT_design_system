@@ -2,7 +2,7 @@
 /**
  * Imports icons exported from Figma into the project.
  *
- *   npm run icons                      # reads ./figma-export
+ *   npm run icons                      # reads ./figma_export (or ./figma-export)
  *   npm run icons -- path/to/export    # or any folder / unzipped export
  *
  * Input: SVG files exported from the ALT Figma file (File → Export, the layers
@@ -20,7 +20,9 @@ import { fileURLToPath } from 'node:url';
 import { optimize } from 'svgo';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
-const INPUT = resolve(process.argv[2] ?? join(ROOT, 'figma-export'));
+const INPUT = resolve(
+  process.argv[2] ?? [join(ROOT, 'figma_export'), join(ROOT, 'figma-export')].find((p) => existsSync(p)) ?? join(ROOT, 'figma_export'),
+);
 const ASSETS = join(ROOT, 'src/assets/icons');
 const GENERATED = join(ROOT, 'src/icons/generated');
 const OVERRIDES = JSON.parse(readFileSync(join(ROOT, 'scripts/icons/overrides.json'), 'utf8'));
@@ -108,8 +110,15 @@ const custom = [];
 const warnings = [];
 const usedFiles = new Set();
 
-for (const file of files.sort()) {
-  const info = classify(file);
+// When several icons share a code, the one marked "primary" in overrides.json is processed first
+// and gets the plain file name (btc.svg); the others get "code--name.svg".
+const isPrimary = (info) => info?.code && OVERRIDES[info.group]?.[info.code]?.primary === info.name;
+const ordered = files
+  .sort()
+  .map((file) => ({ file, info: classify(file) }))
+  .sort((a, b) => Number(isPrimary(b.info)) - Number(isPrimary(a.info)));
+
+for (const { file, info } of ordered) {
   if (!info) continue;
   const raw = readFileSync(file, 'utf8');
 
@@ -127,7 +136,7 @@ for (const file of files.sort()) {
   let base = info.code ? slug(info.code) : slug(info.name);
   if (usedFiles.has(`${info.group}/${base}`)) {
     const alt = `${base}--${slug(info.name)}`;
-    warnings.push(`${info.group}: code ${info.code} used twice, second saved as ${alt}.svg (${info.name})`);
+    warnings.push(`${info.group}: code ${info.code} is shared, "${info.name}" saved as ${alt}.svg`);
     base = alt;
   }
   usedFiles.add(`${info.group}/${base}`);
@@ -135,7 +144,7 @@ for (const file of files.sort()) {
   const svg = optimize(raw, svgoColor(`${info.group}-${base}`)).data;
   writeFileSync(join(ASSETS, info.group, `${base}.svg`), svg);
 
-  const override = OVERRIDES[info.group]?.[info.code ?? info.name] ?? {};
+  const { primary: _primary, ...override } = OVERRIDES[info.group]?.[info.code ?? info.name] ?? {};
   tables[info.group].push({ code: info.code, name: info.name, file: base, ...override });
 }
 

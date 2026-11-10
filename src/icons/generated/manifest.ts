@@ -3,9 +3,1020 @@ import type { IconEntry } from '../types';
 
 export const CRYPTO: IconEntry[] = [
   {
+    "code": "1INCH",
+    "name": "1inch",
+    "file": "1inch"
+  },
+  {
+    "code": "2KEY",
+    "name": "2key Network",
+    "file": "2key"
+  },
+  {
+    "code": "AAVE",
+    "name": "Aave",
+    "file": "aave"
+  },
+  {
+    "code": "ABBC",
+    "name": "ABBC Coin",
+    "file": "abbc"
+  },
+  {
+    "code": "ABT",
+    "name": "Arcblock",
+    "file": "abt"
+  },
+  {
+    "code": "ACT",
+    "name": "Achain",
+    "file": "act"
+  },
+  {
+    "code": "ADA",
+    "name": "Cardano",
+    "file": "ada"
+  },
+  {
+    "code": "ADK",
+    "name": "Aidos Kuneen",
+    "file": "adk"
+  },
+  {
+    "code": "ADX",
+    "name": "AdEx Network",
+    "file": "adx"
+  },
+  {
+    "code": "AE",
+    "name": "Aeternity",
+    "file": "ae"
+  },
+  {
+    "code": "AEON",
+    "name": "Aeon",
+    "file": "aeon"
+  },
+  {
+    "code": "AERGO",
+    "name": "Aergo",
+    "file": "aergo"
+  },
+  {
+    "code": "aEth",
+    "name": "ankrETH",
+    "file": "aeth"
+  },
+  {
+    "code": "AGIX",
+    "name": "SingularityNET",
+    "file": "agix"
+  },
+  {
+    "code": "AGRS",
+    "name": "Agoras Tokens",
+    "file": "agrs"
+  },
+  {
+    "code": "AION",
+    "name": "Aion",
+    "file": "aion"
+  },
+  {
+    "code": "AKRO",
+    "name": "Akropolis",
+    "file": "akro"
+  },
+  {
+    "code": "AKT",
+    "name": "Akash Network",
+    "file": "akt"
+  },
+  {
+    "code": "ALGO",
+    "name": "Algorand",
+    "file": "algo"
+  },
+  {
+    "code": "ALICE",
+    "name": "MyNeighborAlice",
+    "file": "alice"
+  },
+  {
+    "code": "ALPACA",
+    "name": "Alpaca Finance",
+    "file": "alpaca"
+  },
+  {
+    "code": "ALPHA",
+    "name": "Alpha Finance Lab",
+    "file": "alpha"
+  },
+  {
+    "code": "ALT",
+    "name": "Alitas",
+    "file": "alt"
+  },
+  {
+    "code": "AMP",
+    "name": "Amp",
+    "file": "amp"
+  },
+  {
+    "code": "AMPL",
+    "name": "Ampleforth",
+    "file": "ampl"
+  },
+  {
+    "code": "ANC",
+    "name": "Anchor Protocol",
+    "file": "anc"
+  },
+  {
+    "code": "ANKR",
+    "name": "Ankr",
+    "file": "ankr"
+  },
+  {
+    "code": "ANT",
+    "name": "Aragon",
+    "file": "ant"
+  },
+  {
+    "code": "AOA",
+    "name": "Aurora",
+    "file": "aoa"
+  },
+  {
+    "code": "APL",
+    "name": "Apollo Currency",
+    "file": "apl"
+  },
+  {
+    "code": "APPC",
+    "name": "Appcoins",
+    "file": "appc"
+  },
+  {
+    "code": "AR",
+    "name": "Arweave",
+    "file": "ar"
+  },
+  {
+    "code": "ARB",
+    "name": "Arbitrum",
+    "file": "arb"
+  },
+  {
+    "code": "ARDR",
+    "name": "Ardor",
+    "file": "ardr"
+  },
+  {
+    "code": "ARK",
+    "name": "Ark",
+    "file": "ark"
+  },
+  {
+    "code": "ARNX",
+    "name": "Aeron",
+    "file": "arnx"
+  },
+  {
+    "code": "ARPA",
+    "name": "ARPA Chain",
+    "file": "arpa"
+  },
+  {
+    "code": "ARRR",
+    "name": "Pirate Chain",
+    "file": "arrr"
+  },
+  {
+    "code": "ASAFE",
+    "name": "Allsafe",
+    "file": "asafe"
+  },
+  {
+    "code": "AST",
+    "name": "Airswap",
+    "file": "ast"
+  },
+  {
+    "code": "ASTA",
+    "name": "ASTA",
+    "file": "asta"
+  },
+  {
+    "code": "ATOM",
+    "name": "Cosmos",
+    "file": "atom"
+  },
+  {
+    "code": "ATRI",
+    "name": "Atari Token",
+    "file": "atri"
+  },
+  {
+    "code": "AUCTION",
+    "name": "Bounce Token",
+    "file": "auction"
+  },
+  {
+    "code": "AUDIO",
+    "name": "Audius",
+    "file": "audio"
+  },
+  {
+    "code": "AUTO",
+    "name": "Auto",
+    "file": "auto"
+  },
+  {
+    "code": "AVA",
+    "name": "Travala.com",
+    "file": "ava"
+  },
+  {
+    "code": "AVAX",
+    "name": "Avalanche",
+    "file": "avax"
+  },
+  {
+    "code": "AXEL",
+    "name": "AXEL",
+    "file": "axel"
+  },
+  {
+    "code": "AXS",
+    "name": "Axie Infinity",
+    "file": "axs"
+  },
+  {
+    "code": "BAKE",
+    "name": "BakeryToken",
+    "file": "bake"
+  },
+  {
+    "code": "BAL",
+    "name": "Balancer",
+    "file": "bal"
+  },
+  {
+    "code": "BAND",
+    "name": "Band Protocol",
+    "file": "band"
+  },
+  {
+    "code": "BAR",
+    "name": "FC Barcelona Fan Token",
+    "file": "bar"
+  },
+  {
+    "code": "BASIC",
+    "name": "BASIC",
+    "file": "basic"
+  },
+  {
+    "code": "BAT",
+    "name": "Basic Attention Token",
+    "file": "bat"
+  },
+  {
+    "code": "BCD",
+    "name": "Bitcoin Diamond",
+    "file": "bcd"
+  },
+  {
+    "code": "BCH",
+    "name": "Bitcoin Cash",
+    "file": "bch"
+  },
+  {
+    "code": "BCHA",
+    "name": "Bitcoin Cash ABC",
+    "file": "bcha"
+  },
+  {
+    "code": "BCN",
+    "name": "Bytecoin",
+    "file": "bcn"
+  },
+  {
+    "code": "BEAM",
+    "name": "Beam",
+    "file": "beam"
+  },
+  {
+    "code": "BELA",
+    "name": "Belacoin",
+    "file": "bela"
+  },
+  {
+    "code": "BELT",
+    "name": "Belt Finance",
+    "file": "belt"
+  },
+  {
+    "code": "BEST",
+    "name": "Bitpanda Ecosystem Token",
+    "file": "best"
+  },
+  {
+    "code": "BF",
+    "name": "Bitforex Token",
+    "file": "bf"
+  },
+  {
+    "code": "BIFI",
+    "name": "Beefy.Finance",
+    "file": "bifi"
+  },
+  {
+    "code": "BIX",
+    "name": "Bibox Token",
+    "file": "bix"
+  },
+  {
+    "code": "BLOCK",
+    "name": "Blocknet",
+    "file": "block"
+  },
+  {
+    "code": "BLZ",
+    "name": "Bluzelle",
+    "file": "blz"
+  },
+  {
+    "code": "BMC",
+    "name": "Blackmoon",
+    "file": "bmc"
+  },
+  {
+    "code": "BMX",
+    "name": "BitMart Token",
+    "file": "bmx"
+  },
+  {
+    "code": "BNANA",
+    "name": "Chimpion",
+    "file": "bnana"
+  },
+  {
+    "code": "BNB",
+    "name": "Binance Coin",
+    "file": "bnb"
+  },
+  {
+    "code": "BNB",
+    "name": "BNB Smart Chain",
+    "file": "bnb--bnb-smart-chain"
+  },
+  {
+    "code": "BNIX",
+    "name": "Betconix",
+    "file": "bnix"
+  },
+  {
+    "code": "BNK",
+    "name": "Bankera",
+    "file": "bnk"
+  },
+  {
+    "code": "BNT",
+    "name": "Bancor",
+    "file": "bnt"
+  },
+  {
+    "code": "BNTY",
+    "name": "Bounty0x",
+    "file": "bnty"
+  },
+  {
+    "code": "BOND",
+    "name": "BarnBridge",
+    "file": "bond"
+  },
+  {
+    "code": "BORA",
+    "name": "BORA",
+    "file": "bora"
+  },
+  {
+    "code": "BOS",
+    "name": "Boscoin",
+    "file": "bos"
+  },
+  {
+    "code": "BOTX",
+    "name": "botXcoin",
+    "file": "botx"
+  },
+  {
+    "code": "BSD",
+    "name": "Bitsend",
+    "file": "bsd"
+  },
+  {
+    "code": "BST",
+    "name": "Blockstamp",
+    "file": "bst"
+  },
+  {
+    "code": "BSV",
+    "name": "Bitcoin SV",
+    "file": "bsv"
+  },
+  {
     "code": "BTC",
     "name": "Bitcoin",
     "file": "btc"
+  },
+  {
+    "code": "BTCB",
+    "name": "Bitcoin BEP2",
+    "file": "btcb"
+  },
+  {
+    "code": "BTCP",
+    "name": "Bitcoin Private",
+    "file": "btcp"
+  },
+  {
+    "code": "BTCST",
+    "name": "Bitcoin Standard Hashrate Token",
+    "file": "btcst"
+  },
+  {
+    "code": "BTCZ",
+    "name": "Bitcoinz",
+    "file": "btcz"
+  },
+  {
+    "code": "BTG",
+    "name": "Bitcoin Gold",
+    "file": "btg"
+  },
+  {
+    "code": "BTM",
+    "name": "Bytom",
+    "file": "btm"
+  },
+  {
+    "code": "BTMX",
+    "name": "ASD",
+    "file": "btmx"
+  },
+  {
+    "code": "BTO",
+    "name": "Bottos",
+    "file": "bto"
+  },
+  {
+    "code": "BTS",
+    "name": "BitShares",
+    "file": "bts"
+  },
+  {
+    "code": "BTT",
+    "name": "BitTorrent",
+    "file": "btt"
+  },
+  {
+    "code": "BTU",
+    "name": "BTU Protocol",
+    "file": "btu"
+  },
+  {
+    "code": "BTX",
+    "name": "Bitcore",
+    "file": "btx"
+  },
+  {
+    "code": "BUNNY",
+    "name": "PancakeBunny",
+    "file": "bunny"
+  },
+  {
+    "code": "BURGER",
+    "name": "Burger Swap",
+    "file": "burger"
+  },
+  {
+    "code": "BURST",
+    "name": "Burst",
+    "file": "burst"
+  },
+  {
+    "code": "BUSD",
+    "name": "Binance USD",
+    "file": "busd",
+    "deprecated": "Paxos stopped issuing BUSD in Feb 2023. Keep only for history and old balances."
+  },
+  {
+    "code": "BZRX",
+    "name": "bZx Protocol",
+    "file": "bzrx"
+  },
+  {
+    "code": "CAKE",
+    "name": "PancakeSwap",
+    "file": "cake"
+  },
+  {
+    "code": "CCE",
+    "name": "Cloudcoin",
+    "file": "cce"
+  },
+  {
+    "code": "CCXX",
+    "name": "Counos X",
+    "file": "ccxx"
+  },
+  {
+    "code": "CDAI",
+    "name": "Compound Dai",
+    "file": "cdai"
+  },
+  {
+    "code": "CEL",
+    "name": "Celsius",
+    "file": "cel"
+  },
+  {
+    "code": "CELO",
+    "name": "Celo",
+    "file": "celo"
+  },
+  {
+    "code": "CELR",
+    "name": "Celer Network",
+    "file": "celr"
+  },
+  {
+    "code": "CENNZ",
+    "name": "Centrality",
+    "file": "cennz"
+  },
+  {
+    "code": "CET",
+    "name": "CoinEx Token",
+    "file": "cet"
+  },
+  {
+    "code": "CETH",
+    "name": "Compound Ether",
+    "file": "ceth"
+  },
+  {
+    "code": "CFX",
+    "name": "Conflux Network",
+    "file": "cfx"
+  },
+  {
+    "code": "CHAT",
+    "name": "Chatcoin",
+    "file": "chat"
+  },
+  {
+    "code": "CHR",
+    "name": "Chromia",
+    "file": "chr"
+  },
+  {
+    "code": "CHSB",
+    "name": "SwissBorg",
+    "file": "chsb"
+  },
+  {
+    "code": "CHZ",
+    "name": "Chiliz",
+    "file": "chz"
+  },
+  {
+    "code": "CKB",
+    "name": "Nervos Network",
+    "file": "ckb"
+  },
+  {
+    "code": "CLAM",
+    "name": "Clams",
+    "file": "clam"
+  },
+  {
+    "code": "CLOAK",
+    "name": "Cloakcoin",
+    "file": "cloak"
+  },
+  {
+    "code": "CMM",
+    "name": "Commercium",
+    "file": "cmm"
+  },
+  {
+    "code": "CMT",
+    "name": "Cybermiles",
+    "file": "cmt"
+  },
+  {
+    "code": "CND",
+    "name": "Cindicator",
+    "file": "cnd"
+  },
+  {
+    "code": "COB",
+    "name": "Cobinhood",
+    "file": "cob"
+  },
+  {
+    "code": "COLX",
+    "name": "Colossusxt",
+    "file": "colx"
+  },
+  {
+    "code": "COMP",
+    "name": "Compound",
+    "file": "comp"
+  },
+  {
+    "code": "COTI",
+    "name": "COTI",
+    "file": "coti"
+  },
+  {
+    "code": "CRD",
+    "name": "Cryptaldash",
+    "file": "crd"
+  },
+  {
+    "code": "CRE",
+    "name": "Carry",
+    "file": "cre"
+  },
+  {
+    "code": "CREAM",
+    "name": "Cream Finance",
+    "file": "cream"
+  },
+  {
+    "code": "CRO",
+    "name": "Crypto.com Coin",
+    "file": "cro"
+  },
+  {
+    "code": "CRPT",
+    "name": "Crpt",
+    "file": "crpt"
+  },
+  {
+    "code": "CRU",
+    "name": "Crust Network",
+    "file": "cru"
+  },
+  {
+    "code": "CRV",
+    "name": "Curve DAO Token",
+    "file": "crv"
+  },
+  {
+    "code": "CRW",
+    "name": "Crown",
+    "file": "crw"
+  },
+  {
+    "code": "CS",
+    "name": "Credits",
+    "file": "cs"
+  },
+  {
+    "code": "CSPR",
+    "name": "Casper",
+    "file": "cspr"
+  },
+  {
+    "code": "CTC",
+    "name": "Creditcoin",
+    "file": "ctc"
+  },
+  {
+    "code": "CTK",
+    "name": "CertiK",
+    "file": "ctk"
+  },
+  {
+    "code": "CTSI",
+    "name": "Cartesi",
+    "file": "ctsi"
+  },
+  {
+    "code": "CTXC",
+    "name": "Cortex",
+    "file": "ctxc"
+  },
+  {
+    "code": "CUBE",
+    "name": "Cube",
+    "file": "cube"
+  },
+  {
+    "code": "CUSD",
+    "name": "Celo Dollar",
+    "file": "cusd"
+  },
+  {
+    "code": "CUSDC",
+    "name": "Compound Usd Coin",
+    "file": "cusdc"
+  },
+  {
+    "code": "CUSDT",
+    "name": "Compound Usdt",
+    "file": "cusdt"
+  },
+  {
+    "code": "CVC",
+    "name": "Civic",
+    "file": "cvc"
+  },
+  {
+    "code": "CVT",
+    "name": "Cybervein",
+    "file": "cvt"
+  },
+  {
+    "code": "CXO",
+    "name": "CargoX",
+    "file": "cxo"
+  },
+  {
+    "code": "DAG",
+    "name": "Constellation",
+    "file": "dag"
+  },
+  {
+    "code": "DAI",
+    "name": "Dai",
+    "file": "dai"
+  },
+  {
+    "code": "DAO",
+    "name": "DAO Maker",
+    "file": "dao"
+  },
+  {
+    "code": "DASH",
+    "name": "Dash",
+    "file": "dash"
+  },
+  {
+    "code": "DAT",
+    "name": "Datum",
+    "file": "dat"
+  },
+  {
+    "code": "DATA",
+    "name": "Streamr",
+    "file": "data"
+  },
+  {
+    "code": "DAWN",
+    "name": "Dawn Protocol",
+    "file": "dawn"
+  },
+  {
+    "code": "DBC",
+    "name": "Deepbrain Chain",
+    "file": "dbc"
+  },
+  {
+    "code": "DCN",
+    "name": "Dentacoin",
+    "file": "dcn"
+  },
+  {
+    "code": "DCR",
+    "name": "Decred",
+    "file": "dcr"
+  },
+  {
+    "code": "DDX",
+    "name": "DerivaDAO",
+    "file": "ddx"
+  },
+  {
+    "code": "DEGO",
+    "name": "Dego Finance",
+    "file": "dego"
+  },
+  {
+    "code": "DENT",
+    "name": "Dent",
+    "file": "dent"
+  },
+  {
+    "code": "DEXE",
+    "name": "DeXe",
+    "file": "dexe"
+  },
+  {
+    "code": "DFI",
+    "name": "DeFiChain",
+    "file": "dfi"
+  },
+  {
+    "code": "DGB",
+    "name": "DigiByte",
+    "file": "dgb"
+  },
+  {
+    "code": "DGD",
+    "name": "DigixDAO",
+    "file": "dgd"
+  },
+  {
+    "code": "DIA",
+    "name": "DIA",
+    "file": "dia"
+  },
+  {
+    "code": "DIVI",
+    "name": "Divi",
+    "file": "divi"
+  },
+  {
+    "code": "DLT",
+    "name": "Agrello Delta",
+    "file": "dlt"
+  },
+  {
+    "code": "DMT",
+    "name": "Dmarket",
+    "file": "dmt"
+  },
+  {
+    "code": "DNT",
+    "name": "district0x",
+    "file": "dnt"
+  },
+  {
+    "code": "DOCK",
+    "name": "Dock",
+    "file": "dock"
+  },
+  {
+    "code": "DODO",
+    "name": "DODO",
+    "file": "dodo"
+  },
+  {
+    "code": "DOGE",
+    "name": "Dogecoin",
+    "file": "doge"
+  },
+  {
+    "code": "DOT",
+    "name": "Polkadot",
+    "file": "dot"
+  },
+  {
+    "code": "DRC",
+    "name": "Digital Reserve Currency",
+    "file": "drc"
+  },
+  {
+    "code": "DRG",
+    "name": "Dragon Coins",
+    "file": "drg"
+  },
+  {
+    "code": "DRS",
+    "name": "Doctors Coin",
+    "file": "drs"
+  },
+  {
+    "code": "DTH",
+    "name": "Dether",
+    "file": "dth"
+  },
+  {
+    "code": "DUSK",
+    "name": "Dusk Network",
+    "file": "dusk"
+  },
+  {
+    "code": "DVI",
+    "name": "Dvision Network",
+    "file": "dvi"
+  },
+  {
+    "code": "DVPN",
+    "name": "Sentinel",
+    "file": "dvpn"
+  },
+  {
+    "code": "EBST",
+    "name": "Eboostcoin",
+    "file": "ebst"
+  },
+  {
+    "code": "ECA",
+    "name": "Electra",
+    "file": "eca"
+  },
+  {
+    "code": "EDG",
+    "name": "Edgeless",
+    "file": "edg"
+  },
+  {
+    "code": "EGLD",
+    "name": "Elrond",
+    "file": "egld"
+  },
+  {
+    "code": "EGR",
+    "name": "Egoras",
+    "file": "egr"
+  },
+  {
+    "code": "EGT",
+    "name": "Egretia",
+    "file": "egt"
+  },
+  {
+    "code": "EKT",
+    "name": "Educare",
+    "file": "ekt"
+  },
+  {
+    "code": "ELA",
+    "name": "Elastos",
+    "file": "ela"
+  },
+  {
+    "code": "ELF",
+    "name": "aelf",
+    "file": "elf"
+  },
+  {
+    "code": "ELLA",
+    "name": "Ellaism",
+    "file": "ella"
+  },
+  {
+    "code": "EMC",
+    "name": "Emercoin",
+    "file": "emc"
+  },
+  {
+    "code": "EMC2",
+    "name": "Einsteinium",
+    "file": "emc2"
+  },
+  {
+    "code": "ENG",
+    "name": "Enigma",
+    "file": "eng"
+  },
+  {
+    "code": "ENJ",
+    "name": "Enjin Coin",
+    "file": "enj"
+  },
+  {
+    "code": "EOS",
+    "name": "EOS",
+    "file": "eos"
+  },
+  {
+    "code": "ERG",
+    "name": "Ergo",
+    "file": "erg"
+  },
+  {
+    "code": "ERN",
+    "name": "Ethernity Chain",
+    "file": "ern"
+  },
+  {
+    "code": "eRSDL",
+    "name": "unFederalReserve",
+    "file": "ersdl"
+  },
+  {
+    "code": "ESBC",
+    "name": "Esbc",
+    "file": "esbc"
+  },
+  {
+    "code": "ESD",
+    "name": "Empty Set Dollar",
+    "file": "esd"
+  },
+  {
+    "code": "ETC",
+    "name": "Ethereum Classic",
+    "file": "etc"
   },
   {
     "code": "ETH",
@@ -13,17 +1024,2504 @@ export const CRYPTO: IconEntry[] = [
     "file": "eth"
   },
   {
+    "code": "ETN",
+    "name": "Electroneum",
+    "file": "etn"
+  },
+  {
+    "code": "ETP",
+    "name": "Metaverse",
+    "file": "etp"
+  },
+  {
+    "code": "ETZ",
+    "name": "Ether Zero",
+    "file": "etz"
+  },
+  {
+    "code": "EUM",
+    "name": "Elitium",
+    "file": "eum"
+  },
+  {
+    "code": "EURS",
+    "name": "STASIS EURO",
+    "file": "eurs"
+  },
+  {
+    "code": "EVX",
+    "name": "Everex",
+    "file": "evx"
+  },
+  {
+    "code": "EWT",
+    "name": "Energy Web Token",
+    "file": "ewt"
+  },
+  {
+    "code": "EXP",
+    "name": "Expanse",
+    "file": "exp"
+  },
+  {
+    "code": "EXRD",
+    "name": "Radix",
+    "file": "exrd"
+  },
+  {
+    "code": "FACE",
+    "name": "Faceter",
+    "file": "face"
+  },
+  {
+    "code": "FCT",
+    "name": "Factom",
+    "file": "fct"
+  },
+  {
+    "code": "FEI",
+    "name": "Fei Protocol",
+    "file": "fei"
+  },
+  {
+    "code": "FET",
+    "name": "Fetch.ai",
+    "file": "fet"
+  },
+  {
+    "code": "FIDA",
+    "name": "Bonfida",
+    "file": "fida"
+  },
+  {
+    "code": "FIL",
+    "name": "Filecoin",
+    "file": "fil"
+  },
+  {
+    "code": "FIO",
+    "name": "FIO Protocol",
+    "file": "fio"
+  },
+  {
+    "code": "FIRO",
+    "name": "Firo",
+    "file": "firo"
+  },
+  {
+    "code": "FJC",
+    "name": "Fujicoin",
+    "file": "fjc"
+  },
+  {
+    "code": "FLM",
+    "name": "Flamingo",
+    "file": "flm"
+  },
+  {
+    "code": "FLOW",
+    "name": "Flow",
+    "file": "flow"
+  },
+  {
+    "code": "FORTH",
+    "name": "Ampleforth Governance Token",
+    "file": "forth"
+  },
+  {
+    "code": "FRAX",
+    "name": "Frax",
+    "file": "frax"
+  },
+  {
+    "code": "FSN",
+    "name": "Fusion",
+    "file": "fsn"
+  },
+  {
+    "code": "FTC",
+    "name": "Feathercoin",
+    "file": "ftc"
+  },
+  {
+    "code": "FTM",
+    "name": "Fantom",
+    "file": "ftm"
+  },
+  {
+    "code": "FTT",
+    "name": "FTX Token",
+    "file": "ftt",
+    "deprecated": "FTX collapsed in Nov 2022. Keep only for history and old balances."
+  },
+  {
+    "code": "FUEL",
+    "name": "Etherparty",
+    "file": "fuel"
+  },
+  {
+    "code": "FUN",
+    "name": "FUNToken",
+    "file": "fun"
+  },
+  {
+    "code": "FX",
+    "name": "Function X",
+    "file": "fx"
+  },
+  {
+    "code": "FXS",
+    "name": "Frax Share",
+    "file": "fxs"
+  },
+  {
+    "code": "GAL",
+    "name": "Galatasaray Fan Token",
+    "file": "gal"
+  },
+  {
+    "code": "GALA",
+    "name": "Gala",
+    "file": "gala"
+  },
+  {
+    "code": "GAME",
+    "name": "Gamecredits",
+    "file": "game"
+  },
+  {
+    "code": "GAS",
+    "name": "Gas",
+    "file": "gas"
+  },
+  {
+    "code": "GBX",
+    "name": "Gobyte",
+    "file": "gbx"
+  },
+  {
+    "code": "GHST",
+    "name": "Aavegotchi",
+    "file": "ghst"
+  },
+  {
+    "code": "GIN",
+    "name": "Gincoin",
+    "file": "gin"
+  },
+  {
+    "code": "GLM",
+    "name": "Golem",
+    "file": "glm"
+  },
+  {
+    "code": "GLS",
+    "name": "Golos Blockchain",
+    "file": "gls"
+  },
+  {
+    "code": "GNO",
+    "name": "Gnosis",
+    "file": "gno"
+  },
+  {
+    "code": "GRC",
+    "name": "Gridcoin",
+    "file": "grc"
+  },
+  {
+    "code": "GRIN",
+    "name": "Grin",
+    "file": "grin"
+  },
+  {
+    "code": "GRS",
+    "name": "Groestlcoin",
+    "file": "grs"
+  },
+  {
+    "code": "GRT",
+    "name": "The Graph",
+    "file": "grt"
+  },
+  {
+    "code": "GSC",
+    "name": "Global Social Chain",
+    "file": "gsc"
+  },
+  {
+    "code": "GT",
+    "name": "GateToken",
+    "file": "gt"
+  },
+  {
+    "code": "GTC",
+    "name": "Gitcoin",
+    "file": "gtc"
+  },
+  {
+    "code": "GUSD",
+    "name": "Gemini Dollar",
+    "file": "gusd"
+  },
+  {
+    "code": "GVT",
+    "name": "Genesis Vision",
+    "file": "gvt"
+  },
+  {
+    "code": "GXC",
+    "name": "Gxchain",
+    "file": "gxc"
+  },
+  {
+    "code": "HAI",
+    "name": "Hacken Token",
+    "file": "hai"
+  },
+  {
+    "code": "HAKKA",
+    "name": "Hkka Finance",
+    "file": "hakka"
+  },
+  {
+    "code": "HBAR",
+    "name": "Hedera Hashgraph",
+    "file": "hbar"
+  },
+  {
+    "code": "HBTC",
+    "name": "Huobi BTC",
+    "file": "hbtc"
+  },
+  {
+    "code": "HC",
+    "name": "Hypercash",
+    "file": "hc"
+  },
+  {
+    "code": "HEDG",
+    "name": "HedgeTrade",
+    "file": "hedg"
+  },
+  {
+    "code": "HEX",
+    "name": "HEX",
+    "file": "hex"
+  },
+  {
+    "code": "HIVE",
+    "name": "Hive",
+    "file": "hive"
+  },
+  {
+    "code": "HNS",
+    "name": "Handshake",
+    "file": "hns"
+  },
+  {
+    "code": "HNT",
+    "name": "Helium",
+    "file": "hnt"
+  },
+  {
+    "code": "HOGE",
+    "name": "Hoge Finance",
+    "file": "hoge"
+  },
+  {
+    "code": "HOT",
+    "name": "Holo",
+    "file": "hot"
+  },
+  {
+    "code": "HPP",
+    "name": "High Performance Blockchain",
+    "file": "hpp"
+  },
+  {
+    "code": "HT",
+    "name": "Huobi Token",
+    "file": "ht"
+  },
+  {
+    "code": "HTML",
+    "name": "Html Coin",
+    "file": "html"
+  },
+  {
+    "code": "HTR",
+    "name": "Hathor",
+    "file": "htr"
+  },
+  {
+    "code": "HUM",
+    "name": "Humanscape",
+    "file": "hum"
+  },
+  {
+    "code": "HUSD",
+    "name": "HUSD",
+    "file": "husd"
+  },
+  {
+    "code": "HUSH",
+    "name": "Hush",
+    "file": "hush"
+  },
+  {
+    "code": "HXRO",
+    "name": "Hxro",
+    "file": "hxro"
+  },
+  {
+    "code": "HYDRO",
+    "name": "Hydro",
+    "file": "hydro"
+  },
+  {
+    "code": "ICP",
+    "name": "Internet Computer",
+    "file": "icp"
+  },
+  {
+    "code": "ICX",
+    "name": "ICON",
+    "file": "icx"
+  },
+  {
+    "code": "IDEX",
+    "name": "Idex",
+    "file": "idex"
+  },
+  {
+    "code": "IGNIS",
+    "name": "Ignis",
+    "file": "ignis"
+  },
+  {
+    "code": "IHF",
+    "name": "Invictus Hyperion Fund",
+    "file": "ihf"
+  },
+  {
+    "code": "INB",
+    "name": "Insight Chain",
+    "file": "inb"
+  },
+  {
+    "code": "INJ",
+    "name": "Injective Protocol",
+    "file": "inj"
+  },
+  {
+    "code": "INK",
+    "name": "Ink",
+    "file": "ink"
+  },
+  {
+    "code": "INO",
+    "name": "INO COIN",
+    "file": "ino"
+  },
+  {
+    "code": "ION",
+    "name": "Ion",
+    "file": "ion"
+  },
+  {
+    "code": "IOP",
+    "name": "Internet Of People",
+    "file": "iop"
+  },
+  {
+    "code": "IOST",
+    "name": "IOST",
+    "file": "iost"
+  },
+  {
+    "code": "IOTX",
+    "name": "IoTeX",
+    "file": "iotx"
+  },
+  {
+    "code": "IQ",
+    "name": "Everipedia",
+    "file": "iq"
+  },
+  {
+    "code": "IQN",
+    "name": "Iqeon",
+    "file": "iqn"
+  },
+  {
+    "code": "IRIS",
+    "name": "IRISnet",
+    "file": "iris"
+  },
+  {
+    "code": "ITC",
+    "name": "Iot Chain",
+    "file": "itc"
+  },
+  {
+    "code": "JST",
+    "name": "JUST",
+    "file": "jst"
+  },
+  {
+    "code": "KAI",
+    "name": "KardiaChain",
+    "file": "kai"
+  },
+  {
+    "code": "KARMA",
+    "name": "KARMA",
+    "file": "karma"
+  },
+  {
+    "code": "KAT",
+    "name": "Kambria",
+    "file": "kat"
+  },
+  {
+    "code": "KAVA",
+    "name": "Kava.io",
+    "file": "kava"
+  },
+  {
+    "code": "KCS",
+    "name": "KuCoin Token",
+    "file": "kcs"
+  },
+  {
+    "code": "KEEP",
+    "name": "Keep Network",
+    "file": "keep"
+  },
+  {
+    "code": "KEY",
+    "name": "Selfkey",
+    "file": "key"
+  },
+  {
+    "code": "KIN",
+    "name": "Kin",
+    "file": "kin"
+  },
+  {
+    "code": "KLAY",
+    "name": "Klaytn",
+    "file": "klay"
+  },
+  {
+    "code": "KLV",
+    "name": "Klever",
+    "file": "klv"
+  },
+  {
+    "code": "KMD",
+    "name": "Komodo",
+    "file": "kmd"
+  },
+  {
+    "code": "KNC",
+    "name": "Kyber Network Crystal Legacy",
+    "file": "knc"
+  },
+  {
+    "code": "KNDC",
+    "name": "Kanadecoin",
+    "file": "kndc"
+  },
+  {
+    "code": "KOK",
+    "name": "KOK",
+    "file": "kok"
+  },
+  {
+    "code": "KRB",
+    "name": "Karbo",
+    "file": "krb"
+  },
+  {
+    "code": "KSM",
+    "name": "Kusama",
+    "file": "ksm"
+  },
+  {
+    "code": "KSP",
+    "name": "KLAYswap Protocol",
+    "file": "ksp"
+  },
+  {
+    "code": "LA",
+    "name": "Latoken",
+    "file": "la"
+  },
+  {
+    "code": "LBC",
+    "name": "Library Credit",
+    "file": "lbc"
+  },
+  {
+    "code": "LDO",
+    "name": "Lido DAO Token",
+    "file": "ldo"
+  },
+  {
+    "code": "LEO",
+    "name": "UNUS SED LEO",
+    "file": "leo"
+  },
+  {
+    "code": "LIKE",
+    "name": "Likecoin",
+    "file": "like"
+  },
+  {
+    "code": "LINA",
+    "name": "Linear",
+    "file": "lina"
+  },
+  {
+    "code": "LINK",
+    "name": "Chainlink",
+    "file": "link"
+  },
+  {
+    "code": "LKK",
+    "name": "Lykke",
+    "file": "lkk"
+  },
+  {
+    "code": "LON",
+    "name": "Tokenlon Network Token",
+    "file": "lon"
+  },
+  {
+    "code": "LOOM",
+    "name": "Loom Network",
+    "file": "loom"
+  },
+  {
+    "code": "LPT",
+    "name": "Livepeer",
+    "file": "lpt"
+  },
+  {
+    "code": "LQTY",
+    "name": "Liquity",
+    "file": "lqty"
+  },
+  {
+    "code": "LRC",
+    "name": "Loopring",
+    "file": "lrc"
+  },
+  {
+    "code": "LRG",
+    "name": "Largo Coin",
+    "file": "lrg"
+  },
+  {
+    "code": "LSK",
+    "name": "Lisk",
+    "file": "lsk"
+  },
+  {
+    "code": "LTC",
+    "name": "Litecoin",
+    "file": "ltc"
+  },
+  {
+    "code": "LTO",
+    "name": "LTO Network",
+    "file": "lto"
+  },
+  {
+    "code": "LUN",
+    "name": "Lunyr",
+    "file": "lun"
+  },
+  {
+    "code": "LUNA",
+    "name": "Terra",
+    "file": "luna",
+    "deprecated": "The original Terra (LUNA) collapsed in May 2022 and now trades as Terra Classic (LUNC). Check which one is needed."
+  },
+  {
+    "code": "LUSD",
+    "name": "Liquity USD",
+    "file": "lusd"
+  },
+  {
+    "code": "LYM",
+    "name": "Lympo",
+    "file": "lym"
+  },
+  {
+    "code": "mAAPL",
+    "name": "Mirrored Apple",
+    "file": "maapl"
+  },
+  {
+    "code": "MAID",
+    "name": "MaidSafeCoin",
+    "file": "maid"
+  },
+  {
+    "code": "MANA",
+    "name": "Decentraland",
+    "file": "mana"
+  },
+  {
+    "code": "MASK",
+    "name": "Mask Network",
+    "file": "mask"
+  },
+  {
+    "code": "MASS",
+    "name": "Massnet",
+    "file": "mass"
+  },
+  {
+    "code": "MATH",
+    "name": "MATH",
+    "file": "math"
+  },
+  {
+    "code": "MATIC",
+    "name": "Polygon",
+    "file": "matic"
+  },
+  {
+    "code": "MBL",
+    "name": "MovieBloc",
+    "file": "mbl"
+  },
+  {
+    "code": "MCO",
+    "name": "MCO",
+    "file": "mco"
+  },
+  {
+    "code": "MDA",
+    "name": "Moeda Loyalty Points",
+    "file": "mda"
+  },
+  {
+    "code": "MDS",
+    "name": "Medishares",
+    "file": "mds"
+  },
+  {
+    "code": "MDX",
+    "name": "Mdex",
+    "file": "mdx"
+  },
+  {
+    "code": "MED",
+    "name": "MediBloc",
+    "file": "med"
+  },
+  {
+    "code": "MEETONE",
+    "name": "Meetone",
+    "file": "meetone"
+  },
+  {
+    "code": "MET",
+    "name": "Metronome",
+    "file": "met"
+  },
+  {
+    "code": "META",
+    "name": "Metadium",
+    "file": "meta"
+  },
+  {
+    "code": "MFT",
+    "name": "Hifi Finance",
+    "file": "mft"
+  },
+  {
+    "code": "MINA",
+    "name": "Mina",
+    "file": "mina"
+  },
+  {
+    "code": "MIOTA",
+    "name": "IOTA",
+    "file": "miota"
+  },
+  {
+    "code": "MIR",
+    "name": "Mirror Protocol",
+    "file": "mir"
+  },
+  {
+    "code": "MITH",
+    "name": "Mithril",
+    "file": "mith"
+  },
+  {
+    "code": "MKR",
+    "name": "Maker",
+    "file": "mkr"
+  },
+  {
+    "code": "MLK",
+    "name": "MiL.k",
+    "file": "mlk"
+  },
+  {
+    "code": "MLN",
+    "name": "Enzyme",
+    "file": "mln"
+  },
+  {
+    "code": "MNS",
+    "name": "Monnos",
+    "file": "mns"
+  },
+  {
+    "code": "MOAC",
+    "name": "Moac",
+    "file": "moac"
+  },
+  {
+    "code": "MOF",
+    "name": "Molecular Future",
+    "file": "mof"
+  },
+  {
+    "code": "MONA",
+    "name": "MonaCoin",
+    "file": "mona"
+  },
+  {
+    "code": "MPH",
+    "name": "88mph",
+    "file": "mph"
+  },
+  {
+    "code": "MSR",
+    "name": "Masari",
+    "file": "msr"
+  },
+  {
+    "code": "MTH",
+    "name": "Monetha",
+    "file": "mth"
+  },
+  {
+    "code": "MTL",
+    "name": "Metal",
+    "file": "mtl"
+  },
+  {
+    "code": "MVL",
+    "name": "MVL",
+    "file": "mvl"
+  },
+  {
+    "code": "MWC",
+    "name": "MimbleWimbleCoin",
+    "file": "mwc"
+  },
+  {
+    "code": "MX",
+    "name": "MX Token",
+    "file": "mx"
+  },
+  {
+    "code": "MXC",
+    "name": "MXC",
+    "file": "mxc"
+  },
+  {
+    "code": "MYST",
+    "name": "Mysterium",
+    "file": "myst"
+  },
+  {
+    "code": "NANO",
+    "name": "Nano",
+    "file": "nano"
+  },
+  {
+    "code": "NAS",
+    "name": "Nebulas Token",
+    "file": "nas"
+  },
+  {
+    "code": "NAV",
+    "name": "Nav Coin",
+    "file": "nav"
+  },
+  {
+    "code": "NCASH",
+    "name": "Nucleus Vision",
+    "file": "ncash"
+  },
+  {
+    "code": "NCT",
+    "name": "Polyswarm",
+    "file": "nct"
+  },
+  {
+    "code": "NEAR",
+    "name": "NEAR Protocol",
+    "file": "near"
+  },
+  {
+    "code": "NEBL",
+    "name": "Neblio",
+    "file": "nebl"
+  },
+  {
+    "code": "NEO",
+    "name": "Neo",
+    "file": "neo"
+  },
+  {
+    "code": "NEST",
+    "name": "Nest Protocol",
+    "file": "nest"
+  },
+  {
+    "code": "NEU",
+    "name": "Neumark",
+    "file": "neu"
+  },
+  {
+    "code": "NEW",
+    "name": "Newton",
+    "file": "new"
+  },
+  {
+    "code": "NEXO",
+    "name": "Nexo",
+    "file": "nexo"
+  },
+  {
+    "code": "NFT",
+    "name": "APENFT",
+    "file": "nft"
+  },
+  {
+    "code": "NFTX",
+    "name": "NFTX",
+    "file": "nftx"
+  },
+  {
+    "code": "NGC",
+    "name": "Naga",
+    "file": "ngc"
+  },
+  {
+    "code": "NIM",
+    "name": "Nimiq",
+    "file": "nim"
+  },
+  {
+    "code": "NKN",
+    "name": "NKN",
+    "file": "nkn"
+  },
+  {
+    "code": "NLC2",
+    "name": "Nolimitcoin",
+    "file": "nlc2"
+  },
+  {
+    "code": "NLG",
+    "name": "Gulden",
+    "file": "nlg"
+  },
+  {
+    "code": "NMC",
+    "name": "Namecoin",
+    "file": "nmc"
+  },
+  {
+    "code": "NMR",
+    "name": "Numeraire",
+    "file": "nmr"
+  },
+  {
+    "code": "NOIA",
+    "name": "Syntropy",
+    "file": "noia"
+  },
+  {
+    "code": "NRG",
+    "name": "Energi",
+    "file": "nrg"
+  },
+  {
+    "code": "NU",
+    "name": "NuCypher",
+    "file": "nu"
+  },
+  {
+    "code": "NULS",
+    "name": "NULS",
+    "file": "nuls"
+  },
+  {
+    "code": "NWC",
+    "name": "Newscrypto",
+    "file": "nwc"
+  },
+  {
+    "code": "NXM",
+    "name": "NXM",
+    "file": "nxm"
+  },
+  {
+    "code": "NXT",
+    "name": "Nxt",
+    "file": "nxt"
+  },
+  {
+    "code": "NYE",
+    "name": "NewYork Exchange",
+    "file": "nye"
+  },
+  {
+    "code": "OAX",
+    "name": "Oax",
+    "file": "oax"
+  },
+  {
+    "code": "OCEAN",
+    "name": "Ocean Protocol",
+    "file": "ocean"
+  },
+  {
+    "code": "ODE",
+    "name": "Odem",
+    "file": "ode"
+  },
+  {
+    "code": "OGN",
+    "name": "Origin Protocol",
+    "file": "ogn"
+  },
+  {
+    "code": "OK",
+    "name": "Okcash",
+    "file": "ok"
+  },
+  {
+    "code": "OKB",
+    "name": "OKB",
+    "file": "okb"
+  },
+  {
+    "code": "OM",
+    "name": "MANTRA DAO",
+    "file": "om"
+  },
+  {
+    "code": "OMG",
+    "name": "OMG Network",
+    "file": "omg"
+  },
+  {
+    "code": "OMNI",
+    "name": "Omni",
+    "file": "omni"
+  },
+  {
+    "code": "ONE",
+    "name": "Harmony",
+    "file": "one"
+  },
+  {
+    "code": "ONG",
+    "name": "Ontology Gas",
+    "file": "ong"
+  },
+  {
+    "code": "ONG",
+    "name": "Ongsocial",
+    "file": "ong--ongsocial"
+  },
+  {
+    "code": "ONT",
+    "name": "Ontology",
+    "file": "ont"
+  },
+  {
+    "code": "OOT",
+    "name": "Utrum",
+    "file": "oot"
+  },
+  {
+    "code": "OP",
+    "name": "Optimism",
+    "file": "op"
+  },
+  {
+    "code": "ORBS",
+    "name": "Orbs",
+    "file": "orbs"
+  },
+  {
+    "code": "ORC",
+    "name": "Orbit Chain",
+    "file": "orc"
+  },
+  {
+    "code": "OURO",
+    "name": "Ouroboros",
+    "file": "ouro"
+  },
+  {
+    "code": "OXEN",
+    "name": "Oxen",
+    "file": "oxen"
+  },
+  {
+    "code": "OXT",
+    "name": "Orchid",
+    "file": "oxt"
+  },
+  {
+    "code": "OXY",
+    "name": "Oxygen",
+    "file": "oxy"
+  },
+  {
+    "code": "PAC",
+    "name": "PAC Protocol",
+    "file": "pac"
+  },
+  {
+    "code": "PART",
+    "name": "Particl",
+    "file": "part"
+  },
+  {
+    "code": "PASC",
+    "name": "Pascal",
+    "file": "pasc"
+  },
+  {
+    "code": "PAX",
+    "name": "Paxos Standard",
+    "file": "pax"
+  },
+  {
+    "code": "PAXG",
+    "name": "PAX Gold",
+    "file": "paxg"
+  },
+  {
+    "code": "PAY",
+    "name": "Tenx",
+    "file": "pay"
+  },
+  {
+    "code": "PAYX",
+    "name": "Paypex",
+    "file": "payx"
+  },
+  {
+    "code": "PBTC",
+    "name": "Ptokens Btc",
+    "file": "pbtc"
+  },
+  {
+    "code": "PCX",
+    "name": "Chainx",
+    "file": "pcx"
+  },
+  {
+    "code": "PEARL",
+    "name": "Pearl",
+    "file": "pearl"
+  },
+  {
+    "code": "PERL",
+    "name": "PERL.eco",
+    "file": "perl"
+  },
+  {
+    "code": "PERL",
+    "name": "Perlin",
+    "file": "perl--perlin"
+  },
+  {
+    "code": "PERP",
+    "name": "Perpetual Protocol",
+    "file": "perp"
+  },
+  {
+    "code": "PHA",
+    "name": "Phala Network",
+    "file": "pha"
+  },
+  {
+    "code": "PINK",
+    "name": "Pinkcoin",
+    "file": "pink"
+  },
+  {
+    "code": "PIRL",
+    "name": "Pirl",
+    "file": "pirl"
+  },
+  {
+    "code": "PIVX",
+    "name": "PIVX",
+    "file": "pivx"
+  },
+  {
+    "code": "PLBT",
+    "name": "Polybius",
+    "file": "plbt"
+  },
+  {
+    "code": "PLC",
+    "name": "PLATINCOIN",
+    "file": "plc"
+  },
+  {
+    "code": "PLR",
+    "name": "Pillar",
+    "file": "plr"
+  },
+  {
+    "code": "PLT",
+    "name": "Add Xyz",
+    "file": "plt"
+  },
+  {
+    "code": "PLTC",
+    "name": "PlatonCoin",
+    "file": "pltc"
+  },
+  {
+    "code": "PLU",
+    "name": "Pluton",
+    "file": "plu"
+  },
+  {
+    "code": "PMA",
+    "name": "Pumapay",
+    "file": "pma"
+  },
+  {
+    "code": "PNK",
+    "name": "Kleros",
+    "file": "pnk"
+  },
+  {
+    "code": "PNT",
+    "name": "Pnetwork",
+    "file": "pnt"
+  },
+  {
+    "code": "POE",
+    "name": "Poet",
+    "file": "poe"
+  },
+  {
+    "code": "POLIS",
+    "name": "Polis",
+    "file": "polis"
+  },
+  {
+    "code": "POLS",
+    "name": "Polkastarter",
+    "file": "pols"
+  },
+  {
+    "code": "POLY",
+    "name": "Polymath",
+    "file": "poly"
+  },
+  {
+    "code": "POND",
+    "name": "Marlin",
+    "file": "pond"
+  },
+  {
+    "code": "POT",
+    "name": "Potcoin",
+    "file": "pot"
+  },
+  {
+    "code": "POWR",
+    "name": "Power Ledger",
+    "file": "powr"
+  },
+  {
+    "code": "PPC",
+    "name": "Peercoin",
+    "file": "ppc"
+  },
+  {
+    "code": "PPP",
+    "name": "Paypie",
+    "file": "ppp"
+  },
+  {
+    "code": "PPT",
+    "name": "Populous",
+    "file": "ppt"
+  },
+  {
+    "code": "PRE",
+    "name": "Presearch",
+    "file": "pre"
+  },
+  {
+    "code": "PRO",
+    "name": "Propy",
+    "file": "pro"
+  },
+  {
+    "code": "PROM",
+    "name": "Prometeus",
+    "file": "prom"
+  },
+  {
+    "code": "PRQ",
+    "name": "PARSIQ",
+    "file": "prq"
+  },
+  {
+    "code": "PTOY",
+    "name": "Patientory",
+    "file": "ptoy"
+  },
+  {
+    "code": "PUNDIX",
+    "name": "Pundi X[new]",
+    "file": "pundix"
+  },
+  {
+    "code": "PYR",
+    "name": "Vulcan Forged PYR",
+    "file": "pyr"
+  },
+  {
+    "code": "QASH",
+    "name": "Qash",
+    "file": "qash"
+  },
+  {
+    "code": "QKC",
+    "name": "QuarkChain",
+    "file": "qkc"
+  },
+  {
+    "code": "QLC",
+    "name": "Qlink",
+    "file": "qlc"
+  },
+  {
+    "code": "QNT",
+    "name": "Quant",
+    "file": "qnt"
+  },
+  {
+    "code": "QQQ",
+    "name": "Poseidon Network",
+    "file": "qqq"
+  },
+  {
+    "code": "QRL",
+    "name": "Quantum Resistant Ledger",
+    "file": "qrl"
+  },
+  {
+    "code": "QSP",
+    "name": "Quantstamp",
+    "file": "qsp"
+  },
+  {
+    "code": "QTUM",
+    "name": "Qtum",
+    "file": "qtum"
+  },
+  {
+    "code": "QUN",
+    "name": "Qunqun",
+    "file": "qun"
+  },
+  {
+    "code": "RAMP",
+    "name": "RAMP",
+    "file": "ramp"
+  },
+  {
+    "code": "RARI",
+    "name": "Rarible",
+    "file": "rari"
+  },
+  {
+    "code": "RAY",
+    "name": "Raydium",
+    "file": "ray"
+  },
+  {
+    "code": "RBTC",
+    "name": "RSK Smart Bitcoin",
+    "file": "rbtc"
+  },
+  {
+    "code": "RCN",
+    "name": "Ripio Credit Network",
+    "file": "rcn"
+  },
+  {
+    "code": "RDD",
+    "name": "ReddCoin",
+    "file": "rdd"
+  },
+  {
+    "code": "RDN",
+    "name": "Raiden Network Token",
+    "file": "rdn"
+  },
+  {
+    "code": "REEF",
+    "name": "Reef",
+    "file": "reef"
+  },
+  {
+    "code": "REN",
+    "name": "Ren",
+    "file": "ren"
+  },
+  {
+    "code": "RENBTC",
+    "name": "renBTC",
+    "file": "renbtc"
+  },
+  {
+    "code": "REP",
+    "name": "Augur",
+    "file": "rep"
+  },
+  {
+    "code": "REQ",
+    "name": "Request",
+    "file": "req"
+  },
+  {
+    "code": "REV",
+    "name": "Revain",
+    "file": "rev"
+  },
+  {
+    "code": "REV",
+    "name": "RChain",
+    "file": "rev--rchain"
+  },
+  {
+    "code": "REVV",
+    "name": "REVV",
+    "file": "revv"
+  },
+  {
+    "code": "RFOX",
+    "name": "RedFOX Labs",
+    "file": "rfox"
+  },
+  {
+    "code": "RFR",
+    "name": "Refereum",
+    "file": "rfr"
+  },
+  {
+    "code": "RIF",
+    "name": "RSK Infrastructure Framework",
+    "file": "rif"
+  },
+  {
+    "code": "RISE",
+    "name": "Rise",
+    "file": "rise"
+  },
+  {
+    "code": "RLC",
+    "name": "iExec RLC",
+    "file": "rlc"
+  },
+  {
+    "code": "RLC",
+    "name": "Rlc",
+    "file": "rlc--rlc"
+  },
+  {
+    "code": "RLY",
+    "name": "Rally",
+    "file": "rly"
+  },
+  {
+    "code": "ROSE",
+    "name": "Oasis Network",
+    "file": "rose"
+  },
+  {
+    "code": "RSR",
+    "name": "Reserve Rights",
+    "file": "rsr"
+  },
+  {
+    "code": "RSV",
+    "name": "Reserve",
+    "file": "rsv"
+  },
+  {
+    "code": "RUFF",
+    "name": "Ruff",
+    "file": "ruff"
+  },
+  {
+    "code": "RUNE",
+    "name": "THORChain",
+    "file": "rune"
+  },
+  {
+    "code": "RVN",
+    "name": "Ravencoin",
+    "file": "rvn"
+  },
+  {
+    "code": "RYO",
+    "name": "Ryo Currency",
+    "file": "ryo"
+  },
+  {
+    "code": "SAFEMOON",
+    "name": "SafeMoon",
+    "file": "safemoon"
+  },
+  {
+    "code": "SALT",
+    "name": "Salt",
+    "file": "salt"
+  },
+  {
+    "code": "SAN",
+    "name": "Santiment",
+    "file": "san"
+  },
+  {
+    "code": "SAND",
+    "name": "The Sandbox",
+    "file": "sand"
+  },
+  {
+    "code": "SAPP",
+    "name": "Sapphire",
+    "file": "sapp"
+  },
+  {
+    "code": "SBD",
+    "name": "Steem Dollars",
+    "file": "sbd"
+  },
+  {
+    "code": "SC",
+    "name": "Siacoin",
+    "file": "sc"
+  },
+  {
+    "code": "SCRT",
+    "name": "Secret",
+    "file": "scrt"
+  },
+  {
+    "code": "SEELE",
+    "name": "Seele",
+    "file": "seele"
+  },
+  {
+    "code": "SFP",
+    "name": "SafePal",
+    "file": "sfp"
+  },
+  {
+    "code": "SHFT",
+    "name": "Shyft Network",
+    "file": "shft"
+  },
+  {
+    "code": "SHIB",
+    "name": "SHIBA INU",
+    "file": "shib"
+  },
+  {
+    "code": "SHIFT",
+    "name": "Shift",
+    "file": "shift"
+  },
+  {
+    "code": "SHIP",
+    "name": "Shipchain",
+    "file": "ship"
+  },
+  {
+    "code": "SHR",
+    "name": "ShareToken",
+    "file": "shr"
+  },
+  {
+    "code": "SHROOM",
+    "name": "Shroom Finance",
+    "file": "shroom"
+  },
+  {
+    "code": "SIB",
+    "name": "Sibcoin",
+    "file": "sib"
+  },
+  {
+    "code": "SKL",
+    "name": "SKALE Network",
+    "file": "skl"
+  },
+  {
+    "code": "SKY",
+    "name": "Skycoin",
+    "file": "sky"
+  },
+  {
+    "code": "SLP",
+    "name": "Small Love Potion",
+    "file": "slp"
+  },
+  {
+    "code": "SLR",
+    "name": "Solarcoin",
+    "file": "slr"
+  },
+  {
+    "code": "SLS",
+    "name": "Salus",
+    "file": "sls"
+  },
+  {
+    "code": "SMART",
+    "name": "Smartcash",
+    "file": "smart"
+  },
+  {
+    "code": "SNGLS",
+    "name": "Singulardtv",
+    "file": "sngls"
+  },
+  {
+    "code": "SNM",
+    "name": "Sonm",
+    "file": "snm"
+  },
+  {
+    "code": "SNOW",
+    "name": "Snowswap",
+    "file": "snow"
+  },
+  {
+    "code": "SNT",
+    "name": "Status",
+    "file": "snt"
+  },
+  {
+    "code": "SNX",
+    "name": "Synthetix",
+    "file": "snx"
+  },
+  {
+    "code": "SOC",
+    "name": "All Sports",
+    "file": "soc"
+  },
+  {
+    "code": "SOL",
+    "name": "Solana",
+    "file": "sol"
+  },
+  {
+    "code": "SOLO",
+    "name": "Sologenic",
+    "file": "solo"
+  },
+  {
+    "code": "SOUL",
+    "name": "Phantasma",
+    "file": "soul"
+  },
+  {
+    "code": "SPANK",
+    "name": "Spankchain",
+    "file": "spank"
+  },
+  {
+    "code": "SPHTX",
+    "name": "Sophiatx",
+    "file": "sphtx"
+  },
+  {
+    "code": "SRM",
+    "name": "Serum",
+    "file": "srm"
+  },
+  {
+    "code": "SRN",
+    "name": "Sirin Labs Token",
+    "file": "srn"
+  },
+  {
+    "code": "STAK",
+    "name": "Straks",
+    "file": "stak"
+  },
+  {
+    "code": "STAKE",
+    "name": "xDai",
+    "file": "stake"
+  },
+  {
+    "code": "START",
+    "name": "Startcoin",
+    "file": "start"
+  },
+  {
+    "code": "STEEM",
+    "name": "Steem",
+    "file": "steem"
+  },
+  {
+    "code": "STETH",
+    "name": "Lido Staked Ether",
+    "file": "steth"
+  },
+  {
+    "code": "STMX",
+    "name": "StormX",
+    "file": "stmx"
+  },
+  {
+    "code": "STORJ",
+    "name": "Storj",
+    "file": "storj"
+  },
+  {
+    "code": "STQ",
+    "name": "Storiqa",
+    "file": "stq"
+  },
+  {
+    "code": "STRAX",
+    "name": "Stratis",
+    "file": "strax"
+  },
+  {
+    "code": "STRK",
+    "name": "Strike",
+    "file": "strk"
+  },
+  {
+    "code": "STRONG",
+    "name": "Strong",
+    "file": "strong"
+  },
+  {
+    "code": "STX",
+    "name": "Stacks",
+    "file": "stx"
+  },
+  {
+    "code": "SUB",
+    "name": "Substratum",
+    "file": "sub"
+  },
+  {
+    "code": "SUMO",
+    "name": "Sumokoin",
+    "file": "sumo"
+  },
+  {
+    "code": "SUPER",
+    "name": "SuperFarm",
+    "file": "super"
+  },
+  {
+    "code": "SUSD",
+    "name": "sUSD",
+    "file": "susd"
+  },
+  {
+    "code": "SUSHI",
+    "name": "SushiSwap",
+    "file": "sushi"
+  },
+  {
+    "code": "SUTER",
+    "name": "Suterusu",
+    "file": "suter"
+  },
+  {
+    "code": "SWAP",
+    "name": "TrustSwap",
+    "file": "swap"
+  },
+  {
+    "code": "SWTH",
+    "name": "Switcheo",
+    "file": "swth"
+  },
+  {
+    "code": "SXP",
+    "name": "Swipe",
+    "file": "sxp"
+  },
+  {
+    "code": "SYS",
+    "name": "Syscoin",
+    "file": "sys"
+  },
+  {
+    "code": "TAU",
+    "name": "Lamden",
+    "file": "tau"
+  },
+  {
+    "code": "TBX",
+    "name": "Tokenbox",
+    "file": "tbx"
+  },
+  {
+    "code": "TCH",
+    "name": "Tigercash",
+    "file": "tch"
+  },
+  {
+    "code": "TEL",
+    "name": "Telcoin",
+    "file": "tel"
+  },
+  {
+    "code": "TEN",
+    "name": "Tokenomy",
+    "file": "ten"
+  },
+  {
+    "code": "TERA",
+    "name": "Tera",
+    "file": "tera"
+  },
+  {
+    "code": "TERN",
+    "name": "Ternio",
+    "file": "tern"
+  },
+  {
+    "code": "TFUEL",
+    "name": "Theta Fuel",
+    "file": "tfuel"
+  },
+  {
+    "code": "THETA",
+    "name": "THETA",
+    "file": "theta"
+  },
+  {
+    "code": "THR",
+    "name": "Thorecoin",
+    "file": "thr"
+  },
+  {
+    "code": "TITAN",
+    "name": "TitanSwap",
+    "file": "titan"
+  },
+  {
+    "code": "TIX",
+    "name": "Blocktix",
+    "file": "tix"
+  },
+  {
+    "code": "TKN",
+    "name": "Monolith",
+    "file": "tkn"
+  },
+  {
+    "code": "TKO",
+    "name": "Toko Token",
+    "file": "tko"
+  },
+  {
+    "code": "TKS",
+    "name": "Tokes",
+    "file": "tks"
+  },
+  {
+    "code": "TLM",
+    "name": "Alien Worlds",
+    "file": "tlm"
+  },
+  {
+    "code": "TLOS",
+    "name": "Telos",
+    "file": "tlos"
+  },
+  {
+    "code": "TNB",
+    "name": "Time New Bank",
+    "file": "tnb"
+  },
+  {
+    "code": "TNC",
+    "name": "Trinity Network Credit",
+    "file": "tnc"
+  },
+  {
+    "code": "TNT",
+    "name": "Tierion",
+    "file": "tnt"
+  },
+  {
+    "code": "TOMO",
+    "name": "TomoChain",
+    "file": "tomo"
+  },
+  {
+    "code": "TOR",
+    "name": "Torex",
+    "file": "tor"
+  },
+  {
+    "code": "TORN",
+    "name": "Torn",
+    "file": "torn"
+  },
+  {
+    "code": "TPAY",
+    "name": "Tokenpay",
+    "file": "tpay"
+  },
+  {
+    "code": "TRAC",
+    "name": "OriginTrail",
+    "file": "trac"
+  },
+  {
+    "code": "TRB",
+    "name": "Tellor",
+    "file": "trb"
+  },
+  {
+    "code": "TRIBE",
+    "name": "Tribe",
+    "file": "tribe"
+  },
+  {
+    "code": "TRTL",
+    "name": "Turtlecoin",
+    "file": "trtl"
+  },
+  {
+    "code": "TRX",
+    "name": "TRON",
+    "file": "trx"
+  },
+  {
+    "code": "TT",
+    "name": "Thunder Token",
+    "file": "tt"
+  },
+  {
+    "code": "TTT",
+    "name": "The Transfer Token",
+    "file": "ttt"
+  },
+  {
+    "code": "TUSD",
+    "name": "TrueUSD",
+    "file": "tusd"
+  },
+  {
+    "code": "TVK",
+    "name": "Terra Virtua Kolect",
+    "file": "tvk"
+  },
+  {
+    "code": "TWT",
+    "name": "Trust Wallet Token",
+    "file": "twt"
+  },
+  {
+    "code": "TZC",
+    "name": "Trezarcoin",
+    "file": "tzc"
+  },
+  {
+    "code": "UBQ",
+    "name": "Ubiq",
+    "file": "ubq"
+  },
+  {
+    "code": "UBT",
+    "name": "Unibright",
+    "file": "ubt"
+  },
+  {
+    "code": "ULT",
+    "name": "Ultiledger",
+    "file": "ult"
+  },
+  {
+    "code": "UMA",
+    "name": "UMA",
+    "file": "uma"
+  },
+  {
+    "code": "UNFI",
+    "name": "Unifi Protocol DAO",
+    "file": "unfi"
+  },
+  {
+    "code": "UNI",
+    "name": "Uniswap",
+    "file": "uni"
+  },
+  {
+    "code": "UOS",
+    "name": "Ultra",
+    "file": "uos"
+  },
+  {
+    "code": "UQC",
+    "name": "Uquid Coin",
+    "file": "uqc"
+  },
+  {
+    "code": "USD",
+    "name": "Dollar",
+    "file": "usd"
+  },
+  {
+    "code": "USDC",
+    "name": "USD Coin",
+    "file": "usdc"
+  },
+  {
+    "code": "USDN",
+    "name": "Neutrino USD",
+    "file": "usdn"
+  },
+  {
     "code": "USDT",
     "name": "Tether",
     "file": "usdt"
+  },
+  {
+    "code": "USDT",
+    "name": "Tether2",
+    "file": "usdt--tether2"
+  },
+  {
+    "code": "UST",
+    "name": "TerraUSD",
+    "file": "ust"
+  },
+  {
+    "code": "UTK",
+    "name": "Utrust",
+    "file": "utk"
+  },
+  {
+    "code": "VAI",
+    "name": "Vai",
+    "file": "vai"
+  },
+  {
+    "code": "vBNB",
+    "name": "Venus BNB",
+    "file": "vbnb"
+  },
+  {
+    "code": "VEE",
+    "name": "BLOCKv",
+    "file": "vee"
+  },
+  {
+    "code": "VEIL",
+    "name": "Veil",
+    "file": "veil"
+  },
+  {
+    "code": "VERI",
+    "name": "Veritaseum",
+    "file": "veri"
+  },
+  {
+    "code": "VET",
+    "name": "VeChain",
+    "file": "vet"
+  },
+  {
+    "code": "VGX",
+    "name": "Voyager Token",
+    "file": "vgx"
+  },
+  {
+    "code": "VIA",
+    "name": "Viacoin",
+    "file": "via"
+  },
+  {
+    "code": "VIBE",
+    "name": "Vibe",
+    "file": "vibe"
+  },
+  {
+    "code": "VITE",
+    "name": "Vite",
+    "file": "vite"
+  },
+  {
+    "code": "VLX",
+    "name": "Velas",
+    "file": "vlx"
+  },
+  {
+    "code": "VRA",
+    "name": "Verasity",
+    "file": "vra"
+  },
+  {
+    "code": "VRC",
+    "name": "Vericoin",
+    "file": "vrc"
+  },
+  {
+    "code": "VRSC",
+    "name": "VerusCoin",
+    "file": "vrsc"
+  },
+  {
+    "code": "VRT",
+    "name": "Venus Reward Token",
+    "file": "vrt"
+  },
+  {
+    "code": "VSYS",
+    "name": "v.systems",
+    "file": "vsys"
+  },
+  {
+    "code": "VTC",
+    "name": "Vertcoin",
+    "file": "vtc"
+  },
+  {
+    "code": "VTHO",
+    "name": "VeThor Token",
+    "file": "vtho"
+  },
+  {
+    "code": "WAN",
+    "name": "Wanchain",
+    "file": "wan"
+  },
+  {
+    "code": "WAVES",
+    "name": "Waves",
+    "file": "waves"
+  },
+  {
+    "code": "WAXP",
+    "name": "WAX",
+    "file": "waxp"
+  },
+  {
+    "code": "WBNB",
+    "name": "Wrapped BNB",
+    "file": "wbnb"
+  },
+  {
+    "code": "WBTC",
+    "name": "Wrapped Bitcoin",
+    "file": "wbtc"
+  },
+  {
+    "code": "WEX",
+    "name": "WEX",
+    "file": "wex"
+  },
+  {
+    "code": "WGRO",
+    "name": "Wagerr",
+    "file": "wgro"
+  },
+  {
+    "code": "WICC",
+    "name": "WaykiChain",
+    "file": "wicc"
+  },
+  {
+    "code": "WIN",
+    "name": "WINkLink",
+    "file": "win"
+  },
+  {
+    "code": "WING",
+    "name": "Wing",
+    "file": "wing"
+  },
+  {
+    "code": "WINGS",
+    "name": "Wings",
+    "file": "wings"
+  },
+  {
+    "code": "WNXM",
+    "name": "Wrapped NXM",
+    "file": "wnxm"
+  },
+  {
+    "code": "WOO",
+    "name": "Wootrade",
+    "file": "woo"
+  },
+  {
+    "code": "WOZX",
+    "name": "EFFORCE",
+    "file": "wozx"
+  },
+  {
+    "code": "WPR",
+    "name": "Wepower",
+    "file": "wpr"
+  },
+  {
+    "code": "WRX",
+    "name": "WazirX",
+    "file": "wrx"
+  },
+  {
+    "code": "WTC",
+    "name": "Waltonchain",
+    "file": "wtc"
+  },
+  {
+    "code": "XAS",
+    "name": "Asch",
+    "file": "xas"
+  },
+  {
+    "code": "XBC",
+    "name": "Bitcoin Plus",
+    "file": "xbc"
+  },
+  {
+    "code": "XBY",
+    "name": "Xtrabytes",
+    "file": "xby"
+  },
+  {
+    "code": "XCM",
+    "name": "Coinmetro Token",
+    "file": "xcm"
+  },
+  {
+    "code": "XCP",
+    "name": "Counterparty",
+    "file": "xcp"
+  },
+  {
+    "code": "XDB",
+    "name": "DigitalBits",
+    "file": "xdb"
+  },
+  {
+    "code": "XDC",
+    "name": "XinFin Network",
+    "file": "xdc"
+  },
+  {
+    "code": "XDN",
+    "name": "Digitalnote",
+    "file": "xdn"
+  },
+  {
+    "code": "XEM",
+    "name": "NEM",
+    "file": "xem"
+  },
+  {
+    "code": "XHV",
+    "name": "Haven Protocol",
+    "file": "xhv"
+  },
+  {
+    "code": "XIN",
+    "name": "Mixin",
+    "file": "xin"
+  },
+  {
+    "code": "XLM",
+    "name": "Stellar",
+    "file": "xlm"
+  },
+  {
+    "code": "XMR",
+    "name": "Monero",
+    "file": "xmr"
+  },
+  {
+    "code": "XMX",
+    "name": "Xmax",
+    "file": "xmx"
+  },
+  {
+    "code": "XMY",
+    "name": "Myriad",
+    "file": "xmy"
+  },
+  {
+    "code": "XNC",
+    "name": "XeniosCoin",
+    "file": "xnc"
+  },
+  {
+    "code": "XOR",
+    "name": "Sora",
+    "file": "xor"
+  },
+  {
+    "code": "XPA",
+    "name": "Xpa",
+    "file": "xpa"
+  },
+  {
+    "code": "XPM",
+    "name": "Primecoin",
+    "file": "xpm"
+  },
+  {
+    "code": "XPR",
+    "name": "Proton",
+    "file": "xpr"
+  },
+  {
+    "code": "XPRT",
+    "name": "Persistence",
+    "file": "xprt"
+  },
+  {
+    "code": "XRP",
+    "name": "XRP",
+    "file": "xrp"
+  },
+  {
+    "code": "XSR",
+    "name": "Xensor",
+    "file": "xsr"
+  },
+  {
+    "code": "XTZ",
+    "name": "Tezos",
+    "file": "xtz"
+  },
+  {
+    "code": "XUC",
+    "name": "Exchange Union",
+    "file": "xuc"
+  },
+  {
+    "code": "XVG",
+    "name": "Verge",
+    "file": "xvg"
+  },
+  {
+    "code": "XVS",
+    "name": "Venus",
+    "file": "xvs"
+  },
+  {
+    "code": "XWC",
+    "name": "WhiteCoin",
+    "file": "xwc"
+  },
+  {
+    "code": "XYM",
+    "name": "Symbol",
+    "file": "xym"
+  },
+  {
+    "code": "XYO",
+    "name": "XYO",
+    "file": "xyo"
+  },
+  {
+    "code": "YFI",
+    "name": "yearn.finance",
+    "file": "yfi"
+  },
+  {
+    "code": "YOUC",
+    "name": "yOUcash",
+    "file": "youc"
+  },
+  {
+    "code": "YOYOW",
+    "name": "Yoyow",
+    "file": "yoyow"
+  },
+  {
+    "code": "ZAR",
+    "name": "Zar",
+    "file": "zar"
+  },
+  {
+    "code": "ZB",
+    "name": "ZB Token",
+    "file": "zb"
+  },
+  {
+    "code": "ZCL",
+    "name": "Zclassic",
+    "file": "zcl"
+  },
+  {
+    "code": "ZEC",
+    "name": "Zcash",
+    "file": "zec"
+  },
+  {
+    "code": "ZEL",
+    "name": "Zel",
+    "file": "zel"
+  },
+  {
+    "code": "ZEN",
+    "name": "Horizen",
+    "file": "zen"
+  },
+  {
+    "code": "ZEON",
+    "name": "ZEON",
+    "file": "zeon"
+  },
+  {
+    "code": "ZIL",
+    "name": "Zilliqa",
+    "file": "zil"
+  },
+  {
+    "code": "ZKS",
+    "name": "ZKSwap",
+    "file": "zks"
+  },
+  {
+    "code": "ZLW",
+    "name": "Zelwin",
+    "file": "zlw"
+  },
+  {
+    "code": "ZNN",
+    "name": "Zenon",
+    "file": "znn"
+  },
+  {
+    "code": "ZRX",
+    "name": "0x",
+    "file": "zrx"
   }
 ];
 
 export const CURRENCY: IconEntry[] = [
   {
+    "code": "AED",
+    "name": "UAE Dirham",
+    "file": "aed"
+  },
+  {
+    "code": "AMD",
+    "name": "Armenian Dram",
+    "file": "amd"
+  },
+  {
+    "code": "BRL",
+    "name": "Brazilian Real",
+    "file": "brl"
+  },
+  {
+    "code": "CNY",
+    "name": "Chinese Yuan",
+    "file": "cny"
+  },
+  {
+    "code": "EGP",
+    "name": "Egyptian Pound",
+    "file": "egp"
+  },
+  {
     "code": "EUR",
     "name": "Euro",
     "file": "eur"
+  },
+  {
+    "code": "GBP",
+    "name": "British Pound",
+    "file": "gbp"
+  },
+  {
+    "code": "GEL",
+    "name": "Georgian Lari",
+    "file": "gel"
+  },
+  {
+    "code": "HKD",
+    "name": "Hong Kong Dollar",
+    "file": "hkd"
+  },
+  {
+    "code": "JPY",
+    "name": "Japanese Yen",
+    "file": "jpy"
+  },
+  {
+    "code": "KGS",
+    "name": "Kyrgyzstani Som",
+    "file": "kgs"
+  },
+  {
+    "code": "KRW",
+    "name": "South Korean Won",
+    "file": "krw"
+  },
+  {
+    "code": "KZT",
+    "name": "Kazakhstani Tenge",
+    "file": "kzt"
+  },
+  {
+    "code": "NGN",
+    "name": "Nigerian Naira",
+    "file": "ngn"
+  },
+  {
+    "code": "RUB",
+    "name": "Russian Ruble",
+    "file": "rub"
+  },
+  {
+    "code": "THB",
+    "name": "Thai Baht",
+    "file": "thb"
   },
   {
     "code": "UAH",
@@ -34,19 +3532,1232 @@ export const CURRENCY: IconEntry[] = [
     "code": "USD",
     "name": "US Dollar",
     "file": "usd"
+  },
+  {
+    "code": "UZS",
+    "name": "Uzbekistani Som",
+    "file": "uzs"
+  },
+  {
+    "code": "ZAR",
+    "name": "South African Rand",
+    "file": "zar"
   }
 ];
 
 export const FLAGS: IconEntry[] = [
+  {
+    "code": "AD",
+    "name": "Andorra",
+    "file": "ad"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "file": "ae"
+  },
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "file": "af"
+  },
+  {
+    "code": "AG",
+    "name": "Antigua and Barbuda",
+    "file": "ag"
+  },
+  {
+    "code": "AI",
+    "name": "Anguilla",
+    "file": "ai"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "file": "al"
+  },
+  {
+    "code": "AM",
+    "name": "Armenia",
+    "file": "am"
+  },
+  {
+    "code": "AO",
+    "name": "Angola",
+    "file": "ao"
+  },
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "file": "ar"
+  },
+  {
+    "code": "AS",
+    "name": "American Samoa",
+    "file": "as"
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "file": "at"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "file": "au"
+  },
+  {
+    "code": "AW",
+    "name": "Aruba",
+    "file": "aw"
+  },
+  {
+    "code": "AX",
+    "name": "Åland Islands",
+    "file": "ax"
+  },
+  {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "file": "az"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia and Herzegovina",
+    "file": "ba"
+  },
+  {
+    "code": "BB",
+    "name": "Barbados",
+    "file": "bb"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "file": "bd"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "file": "be"
+  },
+  {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "file": "bf"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "file": "bg"
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "file": "bh"
+  },
+  {
+    "code": "BI",
+    "name": "Burundi",
+    "file": "bi"
+  },
+  {
+    "code": "BJ",
+    "name": "Benin",
+    "file": "bj"
+  },
+  {
+    "code": "BL",
+    "name": "Saint Barthélemy",
+    "file": "bl",
+    "aliases": [
+      "St Barts"
+    ]
+  },
+  {
+    "code": "BM",
+    "name": "Bermuda",
+    "file": "bm"
+  },
+  {
+    "code": "BN",
+    "name": "Brunei",
+    "file": "bn"
+  },
+  {
+    "code": "BO",
+    "name": "Bolivia",
+    "file": "bo"
+  },
+  {
+    "code": "BQ-BO",
+    "name": "Bonaire",
+    "file": "bq-bo"
+  },
+  {
+    "code": "BQ-SA",
+    "name": "Saba",
+    "file": "bq-sa"
+  },
+  {
+    "code": "BQ-SE",
+    "name": "Sint Eustatius",
+    "file": "bq-se"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "file": "br"
+  },
+  {
+    "code": "BS",
+    "name": "Bahamas",
+    "file": "bs"
+  },
+  {
+    "code": "BT",
+    "name": "Bhutan",
+    "file": "bt"
+  },
+  {
+    "code": "BW",
+    "name": "Botswana",
+    "file": "bw"
+  },
+  {
+    "code": "BY",
+    "name": "Belarus",
+    "file": "by"
+  },
+  {
+    "code": "BZ",
+    "name": "Belize",
+    "file": "bz"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "file": "ca"
+  },
+  {
+    "code": "CA-BC",
+    "name": "British Columbia",
+    "file": "ca-bc"
+  },
+  {
+    "code": "CC",
+    "name": "Cocos Islands",
+    "file": "cc"
+  },
+  {
+    "code": "CD",
+    "name": "Democratic Republic of the Congo",
+    "file": "cd"
+  },
+  {
+    "code": "CF",
+    "name": "Central African Republic",
+    "file": "cf"
+  },
+  {
+    "code": "CG",
+    "name": "Republic of the Congo",
+    "file": "cg"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "file": "ch"
+  },
+  {
+    "code": "CI",
+    "name": "Côte d'Ivoire",
+    "file": "ci",
+    "aliases": [
+      "Ivory Coast"
+    ]
+  },
+  {
+    "code": "CK",
+    "name": "Cook Islands",
+    "file": "ck"
+  },
+  {
+    "code": "CL",
+    "name": "Chile",
+    "file": "cl"
+  },
+  {
+    "code": "CM",
+    "name": "Cameroon",
+    "file": "cm"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "file": "cn"
+  },
+  {
+    "code": "CN-XZ",
+    "name": "Tibet",
+    "file": "cn-xz"
+  },
+  {
+    "code": "CO",
+    "name": "Colombia",
+    "file": "co"
+  },
+  {
+    "code": "CR",
+    "name": "Costa Rica",
+    "file": "cr"
+  },
+  {
+    "code": "CU",
+    "name": "Cuba",
+    "file": "cu"
+  },
+  {
+    "code": "CV",
+    "name": "Cape Verde",
+    "file": "cv"
+  },
+  {
+    "code": "CW",
+    "name": "Curaçao",
+    "file": "cw"
+  },
+  {
+    "code": "CY",
+    "name": "Cyprus",
+    "file": "cy"
+  },
+  {
+    "code": "CZ",
+    "name": "Czech Republic",
+    "file": "cz",
+    "aliases": [
+      "Czechia"
+    ]
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "file": "de"
+  },
+  {
+    "code": "DJ",
+    "name": "Djibouti",
+    "file": "dj"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "file": "dk"
+  },
+  {
+    "code": "DM",
+    "name": "Dominica",
+    "file": "dm"
+  },
+  {
+    "code": "DO",
+    "name": "Dominican Republic",
+    "file": "do"
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "file": "dz"
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "file": "ec"
+  },
+  {
+    "code": "EC-W",
+    "name": "Galápagos Islands",
+    "file": "ec-w"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "file": "ee"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "file": "eg"
+  },
+  {
+    "code": "EH",
+    "name": "Western Sahara",
+    "file": "eh",
+    "aliases": [
+      "Sahrawi Arab Democratic Republic"
+    ]
+  },
+  {
+    "code": "ER",
+    "name": "Eritrea",
+    "file": "er"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "file": "es"
+  },
+  {
+    "code": "ES-CE",
+    "name": "Ceuta",
+    "file": "es-ce"
+  },
+  {
+    "code": "ES-CN",
+    "name": "Canary Islands",
+    "file": "es-cn"
+  },
+  {
+    "code": "ES-IB",
+    "name": "Balearic Islands",
+    "file": "es-ib"
+  },
+  {
+    "code": "ES-ML",
+    "name": "Melilla",
+    "file": "es-ml"
+  },
+  {
+    "code": "ES-PV",
+    "name": "Basque Country",
+    "file": "es-pv"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "file": "et"
+  },
   {
     "code": "EU",
     "name": "European Union",
     "file": "eu"
   },
   {
+    "code": "FI",
+    "name": "Finland",
+    "file": "fi"
+  },
+  {
+    "code": "FJ",
+    "name": "Fiji",
+    "file": "fj"
+  },
+  {
+    "code": "FK",
+    "name": "Falkland Islands",
+    "file": "fk"
+  },
+  {
+    "code": "FM",
+    "name": "Micronesia",
+    "file": "fm"
+  },
+  {
+    "code": "FO",
+    "name": "Faroe Islands",
+    "file": "fo"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "file": "fr"
+  },
+  {
+    "code": "FR-20R",
+    "name": "Corsica",
+    "file": "fr-20r"
+  },
+  {
+    "code": "GA",
+    "name": "Gabon",
+    "file": "ga"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "file": "gb",
+    "aliases": [
+      "UK",
+      "Great Britain"
+    ]
+  },
+  {
+    "code": "GB-ENG",
+    "name": "England",
+    "file": "gb-eng"
+  },
+  {
+    "code": "GB-ORK",
+    "name": "Orkney Islands",
+    "file": "gb-ork"
+  },
+  {
+    "code": "GB-SCT",
+    "name": "Scotland",
+    "file": "gb-sct"
+  },
+  {
+    "code": "GB-WLS",
+    "name": "Wales",
+    "file": "gb-wls"
+  },
+  {
+    "code": "GD",
+    "name": "Grenada",
+    "file": "gd"
+  },
+  {
+    "code": "GE",
+    "name": "Georgia",
+    "file": "ge"
+  },
+  {
+    "code": "GE-AB",
+    "name": "Abkhazia",
+    "file": "ge-ab"
+  },
+  {
+    "code": "GG",
+    "name": "Guernsey",
+    "file": "gg"
+  },
+  {
+    "code": "GH",
+    "name": "Ghana",
+    "file": "gh"
+  },
+  {
+    "code": "GI",
+    "name": "Gibraltar",
+    "file": "gi"
+  },
+  {
+    "code": "GL",
+    "name": "Greenland",
+    "file": "gl"
+  },
+  {
+    "code": "GM",
+    "name": "Gambia",
+    "file": "gm"
+  },
+  {
+    "code": "GN",
+    "name": "Guinea",
+    "file": "gn"
+  },
+  {
+    "code": "GQ",
+    "name": "Equatorial Guinea",
+    "file": "gq"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "file": "gr"
+  },
+  {
+    "code": "GT",
+    "name": "Guatemala",
+    "file": "gt"
+  },
+  {
+    "code": "GU",
+    "name": "Guam",
+    "file": "gu"
+  },
+  {
+    "code": "GW",
+    "name": "Guinea-Bissau",
+    "file": "gw"
+  },
+  {
+    "code": "GY",
+    "name": "Guyana",
+    "file": "gy"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "file": "hk"
+  },
+  {
+    "code": "HN",
+    "name": "Honduras",
+    "file": "hn"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "file": "hr"
+  },
+  {
+    "code": "HT",
+    "name": "Haiti",
+    "file": "ht"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "file": "hu"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "file": "id"
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "file": "ie"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "file": "il"
+  },
+  {
+    "code": "IM",
+    "name": "Isle of Man",
+    "file": "im"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "file": "in"
+  },
+  {
+    "code": "IO",
+    "name": "British Indian Ocean Territory",
+    "file": "io"
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "file": "iq"
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "file": "ir"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "file": "is"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "file": "it"
+  },
+  {
+    "code": "IT-88",
+    "name": "Sardinia",
+    "file": "it-88"
+  },
+  {
+    "code": "JE",
+    "name": "Jersey",
+    "file": "je"
+  },
+  {
+    "code": "JM",
+    "name": "Jamaica",
+    "file": "jm"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "file": "jo"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "file": "jp"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "file": "ke"
+  },
+  {
+    "code": "KG",
+    "name": "Kyrgyzstan",
+    "file": "kg"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "file": "kh"
+  },
+  {
+    "code": "KI",
+    "name": "Kiribati",
+    "file": "ki"
+  },
+  {
+    "code": "KM",
+    "name": "Comoros",
+    "file": "km"
+  },
+  {
+    "code": "KP",
+    "name": "North Korea",
+    "file": "kp"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "file": "kr"
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "file": "kw"
+  },
+  {
+    "code": "KY",
+    "name": "Cayman Islands",
+    "file": "ky"
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "file": "kz"
+  },
+  {
+    "code": "LA",
+    "name": "Laos",
+    "file": "la"
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "file": "lb"
+  },
+  {
+    "code": "LC",
+    "name": "Saint Lucia",
+    "file": "lc"
+  },
+  {
+    "code": "LI",
+    "name": "Liechtenstein",
+    "file": "li"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "file": "lk"
+  },
+  {
+    "code": "LR",
+    "name": "Liberia",
+    "file": "lr"
+  },
+  {
+    "code": "LS",
+    "name": "Lesotho",
+    "file": "ls"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "file": "lt"
+  },
+  {
+    "code": "LU",
+    "name": "Luxembourg",
+    "file": "lu"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "file": "lv"
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "file": "ly"
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "file": "ma"
+  },
+  {
+    "code": "MC",
+    "name": "Monaco",
+    "file": "mc"
+  },
+  {
+    "code": "MD",
+    "name": "Moldova",
+    "file": "md"
+  },
+  {
+    "code": "ME",
+    "name": "Montenegro",
+    "file": "me"
+  },
+  {
+    "code": "MG",
+    "name": "Madagascar",
+    "file": "mg"
+  },
+  {
+    "code": "MH",
+    "name": "Marshall Islands",
+    "file": "mh"
+  },
+  {
+    "code": "MK",
+    "name": "North Macedonia",
+    "file": "mk",
+    "aliases": [
+      "Macedonia"
+    ]
+  },
+  {
+    "code": "ML",
+    "name": "Mali",
+    "file": "ml"
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar",
+    "file": "mm"
+  },
+  {
+    "code": "MN",
+    "name": "Mongolia",
+    "file": "mn"
+  },
+  {
+    "code": "MO",
+    "name": "Macao",
+    "file": "mo"
+  },
+  {
+    "code": "MP",
+    "name": "Northern Mariana Islands",
+    "file": "mp"
+  },
+  {
+    "code": "MQ",
+    "name": "Martinique",
+    "file": "mq"
+  },
+  {
+    "code": "MR",
+    "name": "Mauritania",
+    "file": "mr"
+  },
+  {
+    "code": "MS",
+    "name": "Montserrat",
+    "file": "ms"
+  },
+  {
+    "code": "MT",
+    "name": "Malta",
+    "file": "mt"
+  },
+  {
+    "code": "MU",
+    "name": "Mauritius",
+    "file": "mu"
+  },
+  {
+    "code": "MV",
+    "name": "Maldives",
+    "file": "mv"
+  },
+  {
+    "code": "MW",
+    "name": "Malawi",
+    "file": "mw"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "file": "mx"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "file": "my"
+  },
+  {
+    "code": "MZ",
+    "name": "Mozambique",
+    "file": "mz"
+  },
+  {
+    "code": "NA",
+    "name": "Namibia",
+    "file": "na"
+  },
+  {
+    "code": "NE",
+    "name": "Niger",
+    "file": "ne"
+  },
+  {
+    "code": "NF",
+    "name": "Norfolk Island",
+    "file": "nf"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "file": "ng"
+  },
+  {
+    "code": "NI",
+    "name": "Nicaragua",
+    "file": "ni"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "file": "nl"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "file": "no"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "file": "np"
+  },
+  {
+    "code": "NR",
+    "name": "Nauru",
+    "file": "nr"
+  },
+  {
+    "code": "NU",
+    "name": "Niue",
+    "file": "nu"
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "file": "nz"
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "file": "om"
+  },
+  {
+    "code": "PA",
+    "name": "Panama",
+    "file": "pa"
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "file": "pe"
+  },
+  {
+    "code": "PF",
+    "name": "French Polynesia",
+    "file": "pf"
+  },
+  {
+    "code": "PG",
+    "name": "Papua New Guinea",
+    "file": "pg"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "file": "ph"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "file": "pk"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "file": "pl"
+  },
+  {
+    "code": "PN",
+    "name": "Pitcairn Islands",
+    "file": "pn"
+  },
+  {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "file": "pr"
+  },
+  {
+    "code": "PS",
+    "name": "Palestine",
+    "file": "ps"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "file": "pt"
+  },
+  {
+    "code": "PT-20",
+    "name": "Azores",
+    "file": "pt-20"
+  },
+  {
+    "code": "PT-30",
+    "name": "Madeira",
+    "file": "pt-30"
+  },
+  {
+    "code": "PW",
+    "name": "Palau",
+    "file": "pw"
+  },
+  {
+    "code": "PY",
+    "name": "Paraguay",
+    "file": "py"
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "file": "qa"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "file": "ro"
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "file": "rs"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "file": "ru"
+  },
+  {
+    "code": "RW",
+    "name": "Rwanda",
+    "file": "rw"
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "file": "sa"
+  },
+  {
+    "code": "SB",
+    "name": "Solomon Islands",
+    "file": "sb"
+  },
+  {
+    "code": "SC",
+    "name": "Seychelles",
+    "file": "sc"
+  },
+  {
+    "code": "SD",
+    "name": "Sudan",
+    "file": "sd"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "file": "se"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "file": "sg"
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "file": "si"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "file": "sk"
+  },
+  {
+    "code": "SL",
+    "name": "Sierra Leone",
+    "file": "sl"
+  },
+  {
+    "code": "SM",
+    "name": "San Marino",
+    "file": "sm"
+  },
+  {
+    "code": "SN",
+    "name": "Senegal",
+    "file": "sn"
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "file": "so"
+  },
+  {
+    "code": "SR",
+    "name": "Suriname",
+    "file": "sr"
+  },
+  {
+    "code": "SS",
+    "name": "South Sudan",
+    "file": "ss"
+  },
+  {
+    "code": "ST",
+    "name": "Sao Tome and Principe",
+    "file": "st"
+  },
+  {
+    "code": "SV",
+    "name": "El Salvador",
+    "file": "sv"
+  },
+  {
+    "code": "SX",
+    "name": "Sint Maarten",
+    "file": "sx"
+  },
+  {
+    "code": "SY",
+    "name": "Syria",
+    "file": "sy"
+  },
+  {
+    "code": "SZ",
+    "name": "Eswatini",
+    "file": "sz",
+    "aliases": [
+      "Swaziland"
+    ]
+  },
+  {
+    "code": "TC",
+    "name": "Turks and Caicos Islands",
+    "file": "tc"
+  },
+  {
+    "code": "TD",
+    "name": "Chad",
+    "file": "td"
+  },
+  {
+    "code": "TG",
+    "name": "Togo",
+    "file": "tg"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "file": "th"
+  },
+  {
+    "code": "TJ",
+    "name": "Tajikistan",
+    "file": "tj"
+  },
+  {
+    "code": "TK",
+    "name": "Tokelau",
+    "file": "tk"
+  },
+  {
+    "code": "TL",
+    "name": "Timor-Leste",
+    "file": "tl",
+    "aliases": [
+      "East Timor"
+    ]
+  },
+  {
+    "code": "TM",
+    "name": "Turkmenistan",
+    "file": "tm"
+  },
+  {
+    "code": "TN",
+    "name": "Tunisia",
+    "file": "tn"
+  },
+  {
+    "code": "TO",
+    "name": "Tonga",
+    "file": "to"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "file": "tr",
+    "aliases": [
+      "Turkey"
+    ]
+  },
+  {
+    "code": "TT",
+    "name": "Trinidad and Tobago",
+    "file": "tt"
+  },
+  {
+    "code": "TV",
+    "name": "Tuvalu",
+    "file": "tv"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "file": "tw"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "file": "tz"
+  },
+  {
     "code": "UA",
     "name": "Ukraine",
     "file": "ua"
+  },
+  {
+    "code": "UG",
+    "name": "Uganda",
+    "file": "ug"
+  },
+  {
+    "code": "UN",
+    "name": "United Nations",
+    "file": "un"
   },
   {
     "code": "US",
@@ -55,9 +4766,309 @@ export const FLAGS: IconEntry[] = [
     "aliases": [
       "USA"
     ]
+  },
+  {
+    "code": "US-HI",
+    "name": "Hawaii",
+    "file": "us-hi"
+  },
+  {
+    "code": "UY",
+    "name": "Uruguay",
+    "file": "uy"
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "file": "uz"
+  },
+  {
+    "code": "VA",
+    "name": "Vatican City",
+    "file": "va",
+    "aliases": [
+      "Holy See"
+    ]
+  },
+  {
+    "code": "VC",
+    "name": "Saint Vincent and the Grenadines",
+    "file": "vc"
+  },
+  {
+    "code": "VE",
+    "name": "Venezuela",
+    "file": "ve"
+  },
+  {
+    "code": "VG",
+    "name": "British Virgin Islands",
+    "file": "vg"
+  },
+  {
+    "code": "VI",
+    "name": "U.S. Virgin Islands",
+    "file": "vi"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "file": "vn"
+  },
+  {
+    "code": "VU",
+    "name": "Vanuatu",
+    "file": "vu"
+  },
+  {
+    "code": "WS",
+    "name": "Samoa",
+    "file": "ws"
+  },
+  {
+    "code": "X-NATO",
+    "name": "NATO",
+    "file": "x-nato"
+  },
+  {
+    "code": "X-NCY",
+    "name": "Northern Cyprus",
+    "file": "x-ncy"
+  },
+  {
+    "code": "X-RAP",
+    "name": "Rapa Nui",
+    "file": "x-rap"
+  },
+  {
+    "code": "X-SML",
+    "name": "Somaliland",
+    "file": "x-sml"
+  },
+  {
+    "code": "X-SOS",
+    "name": "South Ossetia",
+    "file": "x-sos"
+  },
+  {
+    "code": "X-TRN",
+    "name": "Transnistria",
+    "file": "x-trn"
+  },
+  {
+    "code": "XK",
+    "name": "Kosovo",
+    "file": "xk"
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "file": "ye"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "file": "za"
+  },
+  {
+    "code": "ZM",
+    "name": "Zambia",
+    "file": "zm"
+  },
+  {
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "file": "zw"
   }
 ];
 
-export const BRAND: IconEntry[] = [];
+export const BRAND: IconEntry[] = [
+  {
+    "code": null,
+    "name": "apple",
+    "file": "apple"
+  },
+  {
+    "code": null,
+    "name": "dashboard 1",
+    "file": "dashboard-1"
+  },
+  {
+    "code": null,
+    "name": "dashboard 2",
+    "file": "dashboard-2"
+  },
+  {
+    "code": null,
+    "name": "dashboard 3",
+    "file": "dashboard-3"
+  },
+  {
+    "code": null,
+    "name": "google",
+    "file": "google"
+  }
+];
 
-export const ILLUSTRATIONS: IconEntry[] = [];
+export const ILLUSTRATIONS: IconEntry[] = [
+  {
+    "code": null,
+    "name": "Access",
+    "file": "access"
+  },
+  {
+    "code": null,
+    "name": "Application",
+    "file": "application"
+  },
+  {
+    "code": null,
+    "name": "Approval",
+    "file": "approval"
+  },
+  {
+    "code": null,
+    "name": "Automation",
+    "file": "automation"
+  },
+  {
+    "code": null,
+    "name": "Block Diagram",
+    "file": "block-diagram"
+  },
+  {
+    "code": null,
+    "name": "Cloud-based",
+    "file": "cloud-based"
+  },
+  {
+    "code": null,
+    "name": "Dashboard",
+    "file": "dashboard"
+  },
+  {
+    "code": null,
+    "name": "Dialog",
+    "file": "dialog"
+  },
+  {
+    "code": null,
+    "name": "Documentation",
+    "file": "documentation"
+  },
+  {
+    "code": null,
+    "name": "File and Folder",
+    "file": "file-and-folder"
+  },
+  {
+    "code": null,
+    "name": "Incremental Backups",
+    "file": "incremental-backups"
+  },
+  {
+    "code": null,
+    "name": "Information Data",
+    "file": "information-data"
+  },
+  {
+    "code": null,
+    "name": "Integrations",
+    "file": "integrations"
+  },
+  {
+    "code": null,
+    "name": "Layered Backup",
+    "file": "layered-backup"
+  },
+  {
+    "code": null,
+    "name": "Log",
+    "file": "log"
+  },
+  {
+    "code": null,
+    "name": "Neural Interface",
+    "file": "neural-interface"
+  },
+  {
+    "code": null,
+    "name": "Notifications",
+    "file": "notifications"
+  },
+  {
+    "code": null,
+    "name": "Patching",
+    "file": "patching"
+  },
+  {
+    "code": null,
+    "name": "Ransomware Recovery",
+    "file": "ransomware-recovery"
+  },
+  {
+    "code": null,
+    "name": "Reboot Management",
+    "file": "reboot-management"
+  },
+  {
+    "code": null,
+    "name": "Reports",
+    "file": "reports"
+  },
+  {
+    "code": null,
+    "name": "Restore Options",
+    "file": "restore-options"
+  },
+  {
+    "code": null,
+    "name": "Scalability",
+    "file": "scalability"
+  },
+  {
+    "code": null,
+    "name": "Search",
+    "file": "search"
+  },
+  {
+    "code": null,
+    "name": "Security",
+    "file": "security"
+  },
+  {
+    "code": null,
+    "name": "Self Service Portal",
+    "file": "self-service-portal"
+  },
+  {
+    "code": null,
+    "name": "Server Backup",
+    "file": "server-backup"
+  },
+  {
+    "code": null,
+    "name": "Server-based",
+    "file": "server-based"
+  },
+  {
+    "code": null,
+    "name": "Settings",
+    "file": "settings"
+  },
+  {
+    "code": null,
+    "name": "Speed",
+    "file": "speed"
+  },
+  {
+    "code": null,
+    "name": "Surveillance",
+    "file": "surveillance"
+  },
+  {
+    "code": null,
+    "name": "Tools",
+    "file": "tools"
+  }
+];

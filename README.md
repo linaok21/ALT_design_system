@@ -53,7 +53,7 @@ Workflow `.github/workflows/chromatic.yml` публікує Storybook у Chromat
 
 ### Оновити іконки з Figma
 1. У Figma: **File → Export…** (`Ctrl + Shift + E`). Потрібні шари вже мають налаштування SVG — натисни **Export** і збережи архів.
-2. Розпакуй архів у папку `figma-export/` у корені проєкту (вона не потрапляє в Git).
+2. Збережи файли в папку `figma_export/` у корені проєкту (вона не потрапляє в Git). Якщо Figma зависає на «Exporting 0 of …», експортуй частинами: прапори, валюти, криптовалюти по ~230.
 3. `npm run icons` — скрипт оптимізує SVG, розкладе їх у `src/assets/icons/` і перегенерує `src/icons/generated/`.
 
 Не редагуй файли в `src/icons/generated/` і `src/assets/icons/` вручну — вони перезаписуються.

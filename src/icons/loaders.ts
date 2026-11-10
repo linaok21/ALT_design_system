@@ -27,16 +27,26 @@ export const MANIFEST: Record<IconGroup, IconEntry[]> = {
 /* code → entry, exact match first, then case-insensitive ("btc" works too) */
 const exact = new Map<string, IconEntry>();
 const loose = new Map<string, IconEntry>();
+const byFile = new Map<string, IconEntry>();
 for (const [group, rows] of Object.entries(MANIFEST)) {
   for (const row of rows) {
+    byFile.set(`${group}:${row.file}`, row);
     const key = row.code ?? row.name;
     if (!exact.has(`${group}:${key}`)) exact.set(`${group}:${key}`, row);
     if (!loose.has(`${group}:${key.toLowerCase()}`)) loose.set(`${group}:${key.toLowerCase()}`, row);
   }
 }
 
+/**
+ * Finds an icon by code ("BNB", "btc"). When several coins share a ticker, the plain code
+ * returns the primary one; the others are reachable by file id, e.g. "bnb--bnb-smart-chain".
+ */
 export function findIcon(group: IconGroup, code: string): IconEntry | undefined {
-  return exact.get(`${group}:${code}`) ?? loose.get(`${group}:${code.toLowerCase()}`);
+  return (
+    exact.get(`${group}:${code}`) ??
+    loose.get(`${group}:${code.toLowerCase()}`) ??
+    byFile.get(`${group}:${code.toLowerCase()}`)
+  );
 }
 
 const cache = new Map<string, string>();

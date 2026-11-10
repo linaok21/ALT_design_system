@@ -8,8 +8,7 @@
     "typecheck": "tsc",
     "chromatic": "chromatic --storybook-build-dir storybook-static",
     "build-storybook:static": "storybook build && node scripts/escape-replacement-char.mjs storybook-static",
-    "icons": "node scripts/icons/build-icons.mjs",
-    "icons:starter": "node scripts/icons/build-icons.mjs scripts/icons/fixtures"
+    "icons": "node scripts/icons/build-icons.mjs"
   },
   "keywords": [],
   "author": "",

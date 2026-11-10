@@ -5,7 +5,8 @@ import type { GalleryItem } from './IconGallery';
 /** Gallery items for coded groups, built from the generated manifest. */
 export function galleryItems(group: IconGroup): GalleryItem[] {
   return MANIFEST[group].map((e) => {
-    const code = e.code ?? e.name;
+    // shared ticker → address the non-primary icon by its file id
+    const code = e.file.includes('--') ? e.file : (e.code ?? e.name);
     const base = {
       id: `${group}-${e.file}`,
       title: e.code ?? e.name,
@@ -30,6 +31,6 @@ export function galleryItems(group: IconGroup): GalleryItem[] {
 
 export const EMPTY_HINT = (
   <>
-    Поки що тут лише стартовий набір. Повний набір з’явиться після експорту з Figma і команди <code>npm run icons</code>.
+    Клацни на іконку — скопіюється код компонента. Оновити набір з Figma: <code>npm run icons</code> (інструкція в README).
   </>
 );
